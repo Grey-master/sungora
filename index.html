@@ -22,8 +22,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="style1.css">
-	<link rel="stylesheet" href="style0.css">
 
 	<style type="text/css">
 		@charset "UTF-8";
@@ -12411,81 +12409,76 @@
 				letter-spacing: 0px;
 			}
 		}
+		
+		
 
 
 
 
+		.header{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+z-index:1000;
+}
+
+.nav-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.sb-nav{
+display:flex;
+gap:25px;
+}
+
+.sb-nav a{
+text-decoration:none;
+color:black;
+}
+
+.sb-mobile-nav-btn{
+display:none;
+font-size:28px;
+background:none;
+border:none;
+cursor:pointer;
+}
 
 
+@media (max-width:1032px){
 
+.sb-mobile-nav-btn{
+display:block;
+}
 
+.sb-nav{
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+background:white;
+flex-direction:column;
+max-height:0;
+overflow:hidden;
+transition:0.3s;
+z-index: 1001;
+align-items: center;
+}
 
+.sb-nav.active{
+max-height:300px;
+}
 
+.sb-nav a{
+padding:15px;
+border-top:1px solid #eee;
+}
 
-			.header{
-				position:fixed;
-				top:0;
-				width:100%;
-				background:white;
-				z-index:1000;
-				}
-
-			.nav-container{
-				display:flex;
-				justify-content:space-between;
-				align-items:center;
-				padding:15px 20px;
-				}
-
-			.sb-nav{
-				display:flex;
-				gap:25px;
-				}
-
-			.sb-nav a{
-				text-decoration:none;
-				color: black;
-				}
-
-			.sb-mobile-nav-btn{
-				display:none;
-				font-size:28px;
-				background:none;
-				border:none;
-				cursor:pointer;
-				}
-
-
-		@media (max-width:1032px){
-
-			.sb-mobile-nav-btn{
-				display:block;
-				}
-
-			.sb-nav{
-				position:absolute;
-				top:60px;
-				left:0;
-				width:100%;
-				background:white;
-				flex-direction:column;
-				max-height:0;
-				overflow:hidden;
-				transition:0.3s;
-				z-index: 1001;
-				align-items: center;
-				}
-
-			.sb-nav.active{
-				max-height:300px;
-				}
-
-			.sb-nav a{
-				padding:15px;
-				border-top:1px solid #eee;
-				}
-
-			}
+}
 
 /*block_Greed*/
 			.chess-section{
@@ -12513,16 +12506,29 @@
   				aspect-ratio:16/9;   /* сохраняет пропорции 1280x720 */
 			}
 
-			.grid-house{
+			.grid-house-chervona-ruta{
 				display:grid;
 				grid-template-columns:repeat(2,1fr);
 				grid-template-rows:100px 360px repeat(2,1fr);
 
 				grid-template-areas:
-				"img8 img8"
+				"text8 text8"
 				"img7 text7"
-				"img5 img5"
 				"img6 img6";
+
+				width:100%;
+  				aspect-ratio:16/9;   /* сохраняет пропорции 1280x720 */
+			}
+
+			.grid-house-edelveys{
+				display:grid;
+				grid-template-columns:repeat(2,1fr);
+				grid-template-rows:100px 360px 1fr;
+
+				grid-template-areas:
+				"text9 text9"
+				"img10 text10"
+				"img11 img11";
 
 				width:100%;
   				aspect-ratio:16/9;   /* сохраняет пропорции 1280x720 */
@@ -12535,7 +12541,6 @@
 				justify-content:center;
 				padding:2vw;
 				box-sizing:border-box;
-				background-color: #DFCEC4;
 			}
 
 
@@ -12544,11 +12549,17 @@
 				height:100%;
 				object-fit:cover;
 			}
-			.item4{
+			.item-coffi{
 				background-color:#513D32;
 			}
-			.item4 h3{
-				color: #f5f5f5;
+
+			.item-coffi-color p, 
+			.item-coffi-color h3{
+				color: #f5f5f5 !important;
+			}
+
+			.item-milk{
+				background-color:#DFCEC4;
 			}
 
 			.house{
@@ -12569,14 +12580,19 @@
 			.img4{grid-column: 1/4;}
 			.text4{grid-column: 1/4; padding: 0 4vw 4vw 4vw;}
 
-			.img5{grid-column: 1/3; padding: 4vw 0 4vw 0; background-color: #DFCEC4;}
-
-			.img6{grid-column: 1/3; padding: 4vw 0 4vw 0; background-color: #DFCEC4;}
+			.img6{grid-column: 1/3; padding: 4vw 0 4vw 0;}
 
 			.img7{grid-area:img7;}
 			.text7{grid-area:text7;}
 
-			.text8{grid-column: 1/3; padding: 4vw 0 4vw 0; background-color: #DFCEC4;}
+			.text8{grid-column: 1/3; padding: 4vw 0 4vw 0;}
+
+			.text9{grid-column: 1/3; padding: 4vw 0 4vw 0;}
+
+			.img10{grid-area:img10;}
+			.text10{grid-area:text10;}
+
+			.img11{grid-column: 1/3; padding: 4vw 0 4vw 0;}
 
 			.text{
 				background:#f5f5f5;
@@ -12602,7 +12618,7 @@
 					"text4";
 			}
 
-			.grid-house{
+			.grid-house-chervona-ruta{
 				grid-template-columns:1fr;
 				grid-template-rows:auto;
 
@@ -12610,8 +12626,22 @@
 					"text8"
 					"img7"
 					"text7"
-					"img5"
-					"img6";
+					"img6"
+					"text9"
+					"img10"
+					"text10"
+					"img11";
+			}
+
+			.grid-house-edelveys{
+				grid-template-columns:1fr;
+				grid-template-rows:auto;
+
+				grid-template-areas:
+					"text9"
+					"img10"
+					"text10"
+					"img11";
 			}
 
 		}
@@ -12678,7 +12708,7 @@
 			to {
 				transform: translateX(-1800px);
 			}
-		}		
+		}
 
 	</style>
 
@@ -12800,10 +12830,10 @@
 											<a class=" sb-link sb-nav__link " href="index.html#location-1">Локация</a>
 										</li>
 										<li class="sb-nav__item   ">
-											<a class=" sb-link sb-nav__link " href="index.html#location-2">Инвестиции</a>
+											<a class=" sb-link sb-nav__link " href="index.html#house">Будинки</a>
 										</li>
 										<li class="sb-nav__item   ">
-											<a class=" sb-link sb-nav__link " href="index.html#location-3">Контакты</a>
+											<a class=" sb-link sb-nav__link " href="index.html#contact">Контакты</a>
 										</li>
 									</ul>
 								</nav>
@@ -12854,7 +12884,7 @@
 				class="sb-background " 
 				data-bg="linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
             	url(&quot;https://www.dl.dropboxusercontent.com/scl/fi/5nrabj38b51hrx8l4ftcu/sungora_titul2.jpg?rlkey=iu8yzq110m0kp0k8kbqefryxz&st=hd2k23pa&dl=0)" 
-				style=" background-image:               
+				style="background-image:               
                 linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),   
               	url(&quot;https://www.dl.dropboxusercontent.com/scl/fi/5nrabj38b51hrx8l4ftcu/sungora_titul2.jpg?rlkey=iu8yzq110m0kp0k8kbqefryxz&st=hd2k23pa&dl=0)">
 			</div>
@@ -12979,57 +13009,57 @@
 
   <div class="grid-chess">
 
-		<div class="item img1">
+		<div class="item item-milk img1">
 		<img  alt="mapa slavske"
 				loading="lazy"
 				src="https://www.dl.dropboxusercontent.com/scl/fi/gkjvmsq5f6p9gwb5w15we/mapa.jpg?rlkey=6jzew1bivre3zqrd9oixcy2kb&st=4m9houj9&dl=0" alt="">
 		</div>
 
-		<div class="item text1">
+		<div class="item item-milk text1">
 		<h3>Локація</h3>
 		<div-e>Котеджне містечко Sungora розташоване у південно-східної частині с.Славсько, серед живописної місцевості гірського ландшафту. Від центра села до містечка веде дорога з твердим покриттям і освітленням. Котеджне містечко Sungora має велику закриту територію, приватне озеро, ліс навколо, повну автономію, будується орієнтуючись на норми еco-friendly концепції.
 	</div-e>
 		</div>
 
-		<div class="item img2">
+		<div class="item item-milk img2">
 		<img 	alt="slavske"
 				loading="lazy"
 				src="https://www.dl.dropboxusercontent.com/scl/fi/cln10np7pyym14r5uow3f/slavskoH1.jpg?rlkey=479zxpvtarhqy6kchffm4d74r&st=dxqb0l2s&dl=0" alt="">
 		</div>
 
-		<div class="item text2">
+		<div class="item item-milk text2">
 		<h3>Про Славсько...</h3>
 		<div-e>Славсько — один з найперспективніших гірських курортів України. 
 	Кожен рік цей регіон відчуває зростання туристичного попиту. Цілорічний потік туристів шукають для себе привабливі напрямки активного відпочинку:  хайкінг, велосипеди, лижі, сноуборд, спа.
 		</div-e>
 		</div>
 
-		<div class="item img3">
+		<div class="item item-milk img3">
 		<img 	alt="slavske"
 				loading="lazy"
 				src="https://www.dl.dropboxusercontent.com/scl/fi/ni0ynr6gg47ytxv2jux7l/goro2.jpg?rlkey=11wez835kxet8352my3shhnvw&st=fagobtlx&dl=0" alt="">
 		</div>
 
-		<div class="item text3">
+		<div class="item item-milk text3">
 		<h3>Перспективи</h3>
 		<div-e>Славсько зараз має декілька гірськолижних трас і поряд будується майбутній масштабний курорт GORO Mountain Resort, що значно підвищує туристичну та інвестиційну привабливість регіону.</div-e>
 		</div>
 
-		<div class="item item4 img4">
+		<div class="item item-coffi img4">
 		<img 	alt="rozvitok"
 				loading="lazy"
 				src="https://www.dl.dropboxusercontent.com/scl/fi/qhmc5kpxrrcck6ig3vuz7/sungora_titul1.jpg?rlkey=n704ckul7icvij60f3u459g7r&st=x6np4e7j&dl=0" alt="">
 		</div>
 
-		<div class="item item4 pad text4 ">
-		<h3>Концепція еco-friendly</h3>
+		<div class="item item-coffi pad text4">
+		<h3 style="color: #f5f5f5;">Концепція еco-friendly</h3>
 		<div style="color: #f5f5f5;">Від центра селища Славсько до містечка веде дорога з твердим покриттям і освітленням. 15 хвилин і ви потрапляєте в затишне красиве місце де вас чекає місцевий комфорт посеред Карпатського лісу. Містечко активно розвивається, має власну систему комунікацій, таких як опалення, водопостачання, водовідведення, супутниковий зв'язок і електропостачання. </div>
 		</div>
 	</div>
 </section>
-<section class="House">	
-	<div class="grid-house">
-		<div class="item text8"><h1>Будинок "Червона Рута"</h1></div>
+<section class="House" id="house">	
+	<div class="grid-house-chervona-ruta item-milk">
+		<div class="item text8"><h3>Будинок "Червона Рута"</h3></div>
 		<div class="item house img7">
 			<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="house2">
 		</div>
@@ -13037,19 +13067,6 @@
 			<h3>Червона рута</h3>
 			<div-e>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut labore officia soluta neque nulla magni earum, exercitationem, nihil enim doloremque quas inventore deserunt doloribus error nisi assumenda voluptatibus aliquid laborum.</div-e>
 		</div>
-		<div class="item5 img5">
-			<section class="slider">
-				<div class="slides">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
-				</div>
-			</section>      
-		</div>
-
 		<div class="item6 img6">
 			<section class="carousel">
 				<div class="track">
@@ -13060,6 +13077,28 @@
 					<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
 					<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
 
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
+				</div>
+			</section>      
+		</div>
+	</div>
+	<div class="grid-house-edelveys item-coffi item-coffi-color">
+		<div class="item text9"><h3>Будинок "Едельвейс"</h3></div>
+		<div class="item house img10">
+			<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="house2">
+		</div>
+		<div class="item house text10">
+			<h3>Едельвейс</h3>
+			<div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut labore officia soluta neque nulla magni earum, exercitationem, nihil enim doloremque quas inventore deserunt doloribus error nisi assumenda voluptatibus aliquid laborum.</p></div>
+		</div>
+		<div class="item11 img11">
+			<section class="slider">
+				<div class="slides">
 					<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
 					<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
 					<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
@@ -13084,243 +13123,13 @@
 
 
 <!-- block2_Section3 -->
-		<section id="products"
-			class="sb-section
-                  sb-section-opt-light option-columns-3col option-link-decoration-border-bottom-static option-items-shadow option-image-color-hover-revert option-collection-title-decoration-arrow option-card-hover-animation-grow option-imagesize-lg option-align-content-left option-section-background-image-fixed option-grid-align-default option-items-shadow-on-hover option-imagecrop-rectangle-landscape"
-			data-sb-id="91e2cec9-1edf-4eea-9577-01d3914a8aa5" 
-			style=" ">
-
-			<div class="container
-                sb-container-fixed
-                sb-container">
-				<!--htmlhint spec-char-escape:false -->
-
-				<div id="sb-id-6d52638c-b746-49db-ac27-0ac4d6133dcd" 
-					class="row
-						sb-row
-						sb-row-opt-padding-top-large
-						sb-row-opt-padding-bottom-large
-						sb-row-opt-center">
-					<!--htmlhint spec-char-escape:false -->
-
-
-					<div id="sb-id-05dab111-13c7-42a8-9e24-67c992934702" 
-						class="sb-column
-							col-xs-12
-							col-sm-12
-							col-md-12
-							col-lg-12
-							col-xl-12
-							col-xs-offset-0
-							col-sm-offset-0
-							col-md-offset-0
-							col-lg-offset-0
-							col-xl-offset-0
-							sb-component-items-grid" 
-						style=" ">
-
-
-						<div id="sb-id-9a53e0ef-3fd2-4e24-8adb-20f6cf7418f9" 
-							class="sb-column-content ">
-
-							<div class="sb-items-grid">
-
-								<div class="sb-items-grid__content option-width sb-section-alignable">
-<!-- Змінити текст -->
-									<div data-aos="slide-up" data-aos-offset="120" data-aos-delay="0"
-										data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true"
-										class="sb-section-title aos-init aos-animate" data-component-field="title"
-										data-sb-field="text" data-sb-is-link="" data-sb-type="text"
-										data-sb-uuid="0d824a73-a9d6-4ec8-ad08-f4585895a403">
-										
-										Что це таке?
-										
-									</div>
-									<div data-aos="slide-up" data-aos-offset="120" data-aos-delay="50"
-										data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true"
-										class="sb-section-subtitle aos-init aos-animate" data-component-field="subtitle"
-										data-sb-field="text" data-sb-is-link="" data-sb-type="text"
-										data-sb-uuid="1aec8c47-548d-42aa-8cfa-01095a09ad0f">
-										
-										Як це працює?
-
-									</div>
-									<div data-aos="slide-up" data-aos-offset="120" data-aos-delay="100"
-										data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true"
-										class="sb-paragraph aos-init aos-animate" data-component-field="paragraph"
-										data-sb-field="text" data-sb-is-link="" data-sb-type="rich-text"
-										data-sb-uuid="66662ceb-8652-48d4-9a8e-21c02f407374">
-										<p>
-
-											!!!!!!!!!!!!
-
-										</p>
-									</div>
-<!-- END Змінити текст -->
-								</div>
-
-								<ul class="sb-items-grid__items items-grid sb-section-alignable"
-									data-sb-uuid="9a53e0ef-3fd2-4e24-8adb-20f6cf7418f9">
-<!--block smart-fitness-tracker-->
-<!-- перший блок-посилання -->
-									<li data-aos="fade-in" data-aos-offset="120" data-aos-delay="0"
-										data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true"
-										class="items-grid__item aos-init aos-animate" skip-data-sb="">
-<!-- Змінити силку -->
-										<a aria-label="Read more" class="items-grid__item-body" data-sb-is-link="true"
-											data-sb-uuid="3b5465f7-295e-457b-b5a4-529ec6412d60"
-											href="index.html#products" rel=" "
-											target="">
-<!-- Змінити зображення -->
-											<div class="items-grid__item-image" skip-data-sb="">
-												<figure class="option-image lazy"
-													data-bg="url(&#39;https://www.dl.dropboxusercontent.com/scl/fi/kffo63vc7dzraktvhd1iy/slavskeH.jpg?rlkey=z65xr417yb29geol37c5uk573&st=y1hklhz8&dl=0;&#39;)"
-													data-custom-media-style="14664461-bd93-4d3f-ad6c-0fb32ac84bf0"
-													skip-data-sb="" data-was-processed="true"
-													style="background-image: url(https://www.dl.dropboxusercontent.com/scl/fi/kffo63vc7dzraktvhd1iy/slavskeH.jpg?rlkey=z65xr417yb29geol37c5uk573&st=y1hklhz8&dl=0);">
-													<img alt="smart fitness tracker, health monitoring, activity tracking"
-														loading="lazy"
-														src="">
-												</figure>
-											</div>
-<!-- END Змінити зображення -->
-											<div class="items-grid__item-content" skip-data-sb="">
-<!-- Змінити текст -->
-												<div class="items-grid__header h3" skip-data-sb="">
-
-													Перша характеристика
-
-													<svg fill="none" viewBox="0 0 10 17"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M1.25111 16.0843c-.320261 0-.640343-.1222-.88465-.3663-.488613-.4886-.488613-1.2807 0-1.7693l5.90679-5.90664L.36646 2.13545c-.488613-.48844-.488613-1.28069 0-1.769124.488434-.488435 1.28069-.488435 1.76912 0L8.92684 7.15759c.48844.48843.48844 1.28068 0 1.7693L2.13558 15.7181c-.24412.244-.56421.3662-.88447.3662Z"
-															fill="#000"></path>
-													</svg>
-
-												</div>
-
-												<div class="items-grid__description" skip-data-sb="">
-													<p>
-														Перший блок текста, котрий бажано заменити на потрібний текст.
-													</p>
-												</div>
-<!-- END Змінити текст -->
-											</div>
-										</a>
-									</li>
-<!-- другий блок-посилання -->
-									<li data-aos="fade-in" data-aos-offset="120" data-aos-delay="50"
-										data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true"
-										class="items-grid__item aos-init aos-animate" skip-data-sb="">
-<!-- Змінити силку -->
-										<a aria-label="Read more" class="items-grid__item-body" data-sb-is-link="true"
-											data-sb-uuid="f7e00149-ceb5-40c8-ad3a-acaf9855e9bf"
-											href="index.html#products" rel=" "
-											target="">
-<!-- Змінити зображення -->
-											<div class="items-grid__item-image" skip-data-sb="">
-												<figure class="option-image lazy"
-													data-bg="url(&#39;https://i.postimg.cc/7L6jgTZL/1024x768-Box-2.jpg&#39;)"
-													data-custom-media-style="130e9362-9110-4327-b64c-12e5d29a5b6b"
-													skip-data-sb="" data-was-processed="true"
-													style="background-image: url(&quot;https://i.postimg.cc/7L6jgTZL/1024x768-Box-2.jpg&quot;);">
-													<img alt="heart rate monitor, smartwatch, fitness wearable"
-														loading="lazy"
-														src="./Voskhod_ Smart Watches with Advanced Features_files/cb02cb3c-fb74-11ef-8410-0242ac110002-jpg-regular_image.jpeg">
-												</figure>
-											</div>
-<!-- END Змінити зображення -->
-											<div class="items-grid__item-content" skip-data-sb="">
-<!-- Змінити текст -->
-												<div class="items-grid__header h3" skip-data-sb="">
-
-													Друга характеристика
-
-													<svg fill="none" viewBox="0 0 10 17"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M1.25111 16.0843c-.320261 0-.640343-.1222-.88465-.3663-.488613-.4886-.488613-1.2807 0-1.7693l5.90679-5.90664L.36646 2.13545c-.488613-.48844-.488613-1.28069 0-1.769124.488434-.488435 1.28069-.488435 1.76912 0L8.92684 7.15759c.48844.48843.48844 1.28068 0 1.7693L2.13558 15.7181c-.24412.244-.56421.3662-.88447.3662Z"
-															fill="#000"></path>
-													</svg>
-
-												</div>
-
-												<div class="items-grid__description" skip-data-sb="">
-													<p>
-
-														Другий блок текста, котрий бажано заменити на потрібний текст.
-
-													</p>
-												</div>
-<!-- END Змінити текст -->
-											</div>
-										</a>
-									</li>
-<!-- третій блок-посилання -->
-									<li data-aos="fade-in" data-aos-offset="120" data-aos-delay="100"
-										data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-once="true"
-										class="items-grid__item aos-init aos-animate" skip-data-sb="">
-<!-- Змінити силку -->
-										<a aria-label="Read more" class="items-grid__item-body" data-sb-is-link="true"
-											data-sb-uuid="d0185ab4-d6d5-4cf3-b3e8-81f0ff39868d"
-											href="index.html#products" rel=" "
-											target="">
-<!-- Змінити зображення -->
-											<div class="items-grid__item-image" skip-data-sb="">
-												<figure class="option-image lazy"
-													data-bg="url(&#39;https://i.postimg.cc/xT8HVf8z/1024x768-Box-1.jpg&#39;)"
-													data-custom-media-style="29a0f2fe-c70a-4498-b22c-863567f22d96"
-													skip-data-sb="" data-was-processed="true"
-													style="background-image: url(&quot;https://i.postimg.cc/xT8HVf8z/1024x768-Box-1.jpg&quot;);">
-													<img alt="multi sport smartwatch, activity tracker, fitness technology"
-														loading="lazy"
-														src="./Voskhod_ Smart Watches with Advanced Features_files/cb3d4d70-fb74-11ef-8410-0242ac110002-jpg-regular_image.jpeg">
-												</figure>
-											</div>
-<!-- END Змінити зображення -->
-											<div class="items-grid__item-content" skip-data-sb="">
-<!-- Змінити текст -->
-												<div class="items-grid__header h3" skip-data-sb="">
-
-													Третя характеристика
-
-													<svg fill="none" viewBox="0 0 10 17"
-														xmlns="http://www.w3.org/2000/svg">
-														<path
-															d="M1.25111 16.0843c-.320261 0-.640343-.1222-.88465-.3663-.488613-.4886-.488613-1.2807 0-1.7693l5.90679-5.90664L.36646 2.13545c-.488613-.48844-.488613-1.28069 0-1.769124.488434-.488435 1.28069-.488435 1.76912 0L8.92684 7.15759c.48844.48843.48844 1.28068 0 1.7693L2.13558 15.7181c-.24412.244-.56421.3662-.88447.3662Z"
-															fill="#000"></path>
-													</svg>
-
-												</div>
-
-												<div class="items-grid__description" skip-data-sb="">
-													<p>
-
-														Третій блок текста, котрий бажано заменити на потрібний текст.
-
-													</p>
-												</div>
-<!-- END Змінити текст -->
-											</div>
-										</a>
-									</li>
-
-								</ul>
-							</div>
-
-
-						</div>
-
-					</div>
-
-
-				</div>
-
-
-			</div>
-		</section>
+		
 <!-- END block2_Section3 -->
 		<!--htmlhint attr-no-duplication:false -->
+
+
+
+
 <!-- block2_Section4 -->
 		<section id="contact"
 			class="sb-section
