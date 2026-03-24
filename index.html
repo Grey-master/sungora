@@ -12734,7 +12734,7 @@
 				height:22px;
 				fill:#fff;
 			} */
-
+/*
 			.contact-details__viber{
 				display: block;
 				margin-top: 10px
@@ -12813,6 +12813,61 @@
 				text-transform: none
 			}
 		}
+*/
+/*messengers*/
+/*профессиональные кнопки*/
+
+			.messenger-bar{
+				display:flex;
+				gap:12px;
+			}
+
+			.messenger{
+				display:flex;
+				align-items:center;
+				gap:8px;
+				padding:8px 12px;
+				border-radius:30px;
+				text-decoration:none;
+				color:#fff;
+				font-size:14px;
+				font-family:sans-serif;
+				transition:0.3s;
+			}
+
+			.messenger svg{
+				width:16px;
+				height:16px;
+				fill:white;
+			}
+
+				.viber{
+				background:#7360F2;
+				}
+
+				.telegram{
+				background:#229ED9;
+				}
+
+				.whatsapp{
+				background:#25D366;
+				}
+
+				.messenger span{
+				max-width:0;
+				overflow:hidden;
+				white-space:nowrap;
+				transition:0.3s;
+				}
+
+				.messenger:hover{
+				transform:translateY(-3px);
+				box-shadow:0 6px 14px rgba(0,0,0,0.25);
+				}
+
+				.messenger:hover span{
+				max-width:100px;
+				}
 
 	</style>
 
@@ -13312,24 +13367,34 @@
 										+38 068 0832442, +38 068 8771363
 										
 								</div>	
-								<div class="contact-details__viber" 
-									data-component-field="contact"
-									data-sb-field="viber" 
-									data-sb-is-link="" 
-									data-sb-type="viber"
-									data-sb-uuid="viber768f7-4623-4faf-a6bb-e10a1a67dc84">
+<!--Messengers-->
+								<div class="messenger-bar">
 
-								
-									<svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-										<path fill="#7360F2" d="M12 2C6.48 2 2 5.94 2 10.8c0 2.64 1.36 5.02 3.5 6.68V22l4.26-2.34c.71.2 1.46.3 2.24.3 5.52 0 10-3.94 10-8.8S17.52 2 12 2zm3.8 12.1c-.18.5-1.03.93-1.43 1-.36.06-.83.09-1.33-.08-.31-.1-.7-.23-1.2-.44-2.1-.9-3.48-3.05-3.6-3.2-.11-.15-.86-1.13-.86-2.16s.54-1.54.74-1.75c.19-.21.42-.26.56-.26.14 0 .29 0 .4.01.13.01.31-.05.48.36.18.42.6 1.45.66 1.55.06.11.09.24.02.38-.07.15-.11.24-.23.36-.11.13-.23.29-.34.39-.11.1-.23.21-.1.41.13.21.57.95 1.24 1.55.85.77 1.57 1 1.8 1.12.23.11.36.1.49-.06.14-.15.58-.68.74-.92.15-.24.31-.2.52-.12.21.08 1.34.63 1.57.75.23.11.38.17.44.27.06.1.06.58-.12 1.08z"/>
-									</svg>
-									
-									<a href="viber://forward?text=Добрий день!%20Цікавить%20будинок%20у%20Славському%20в%20КМ%20Sungora" target="_blank">
-											Написать в Viber
+									<a href="viber://chat/?number=%2B380680832442" class="messenger viber" target="_blank" >
+										<svg viewBox="0 0 24 24">
+										<path d="M12 2C6.48 2 2 5.94 2 10.8c0 2.64 1.36 5.02 3.5 6.68V22l4.26-2.34c.71.2 1.46.3 2.24.3 5.52 0 10-3.94 10-8.8S17.52 2 12 2z"/>
+										</svg>
+										<span style="color: beige;">Viber</span>
 									</a>
+
+									<a href="https://t.me/@s3248729" class="messenger telegram" target="_blank" >
+										<svg viewBox="0 0 24 24">
+										<path d="M9.04 15.47l-.39 5.48c.56 0 .8-.24 1.09-.53l2.63-2.5 5.46 4c1 .55 1.72.26 1.97-.92l3.57-16.73c.29-1.36-.49-1.89-1.46-1.53L1.58 9.52c-1.33.52-1.31 1.27-.23 1.6l5.79 1.81L19.92 5.6c.6-.39 1.15-.17.7.22"/>
+										</svg>
+										<span style="color: beige;">Telegram</span>
+									</a>
+
+									<a href="https://wa.me/380680832442" class="messenger whatsapp" target="_blank">
+										<svg viewBox="0 0 24 24">
+										<path d="M12 2a10 10 0 0 0-8.94 14.5L2 22l5.64-1.47A10 10 0 1 0 12 2z"/>
+										</svg>
+										<span style="color: beige;">WhatsApp</span>
+									</a>
+
 								</div>
 
 
+<!--Messengers-->
 							</div>
 							
 							<div class="contact-details__row contact-details__location">
