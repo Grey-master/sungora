@@ -9603,7 +9603,7 @@
 			}
 		}
 
-		.contact-details__email {
+		.contact-details__telephone {
 			display: block;
 			margin-top: 10px
 		}
@@ -9619,14 +9619,14 @@
 			text-align: left
 		}
 
-		.contact-details__email,
+		.contact-details__telephone,
 		.contact-details__address {
 			display: flex;
 			align-items: flex-start;
 			gap: 10px
 		}
 
-		.contact-details__email svg,
+		.contact-details__telephone svg,
 		.contact-details__address svg {
 			flex-shrink: 0;
 			width: 1.25rem;
@@ -9635,7 +9635,7 @@
 
 		@media (max-width: 767px) {
 
-			.contact-details__email svg,
+			.contact-details__telephone svg,
 			.contact-details__address svg {
 				width: 1rem;
 				height: 1rem;
@@ -9643,24 +9643,24 @@
 			}
 		}
 
-		.sb-section-opt-light .contact-details__email svg,
+		.sb-section-opt-light .contact-details__telephone svg,
 		.sb-section-opt-light .contact-details__address svg {
 			fill: #595959
 		}
 
-		.sb-section-opt-dark .contact-details__email svg,
+		.sb-section-opt-dark .contact-details__telephone svg,
 		.sb-section-opt-dark .contact-details__address svg {
 			fill: #fff
 		}
 
-		.sb-section-opt-accent .contact-details__email svg,
+		.sb-section-opt-accent .contact-details__telephone svg,
 		.sb-section-opt-accent .contact-details__address svg {
 			fill: #fff
 		}
 
-		.contact-details__email a,
-		.contact-details__email a:link,
-		.contact-details__email a:visited,
+		.contact-details__telephone a,
+		.contact-details__telephone a:link,
+		.contact-details__telephone a:visited,
 		.contact-details__address a,
 		.contact-details__address a:link,
 		.contact-details__address a:visited {
@@ -9675,9 +9675,9 @@
 
 		@media (max-width: 991px) {
 
-			.contact-details__email a,
-			.contact-details__email a:link,
-			.contact-details__email a:visited,
+			.contact-details__telephone a,
+			.contact-details__telephone a:link,
+			.contact-details__telephone a:visited,
 			.contact-details__address a,
 			.contact-details__address a:link,
 			.contact-details__address a:visited {
@@ -9693,9 +9693,9 @@
 
 		@media (max-width: 767px) {
 
-			.contact-details__email a,
-			.contact-details__email a:link,
-			.contact-details__email a:visited,
+			.contact-details__telephone a,
+			.contact-details__telephone a:link,
+			.contact-details__telephone a:visited,
 			.contact-details__address a,
 			.contact-details__address a:link,
 			.contact-details__address a:visited {
@@ -12409,76 +12409,83 @@
 				letter-spacing: 0px;
 			}
 		}
-		
-		
 
 
 
 
-		.header{
-position:fixed;
-top:0;
-width:100%;
-background:white;
-z-index:1000;
-}
-
-.nav-container{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 20px;
-}
-
-.sb-nav{
-display:flex;
-gap:25px;
-}
-
-.sb-nav a{
-text-decoration:none;
-color:black;
-}
-
-.sb-mobile-nav-btn{
-display:none;
-font-size:28px;
-background:none;
-border:none;
-cursor:pointer;
-}
 
 
-@media (max-width:1032px){
 
-.sb-mobile-nav-btn{
-display:block;
-}
 
-.sb-nav{
-position:absolute;
-top:60px;
-left:0;
-width:100%;
-background:white;
-flex-direction:column;
-max-height:0;
-overflow:hidden;
-transition:0.3s;
-z-index: 1001;
-align-items: center;
-}
 
-.sb-nav.active{
-max-height:300px;
-}
 
-.sb-nav a{
-padding:15px;
-border-top:1px solid #eee;
-}
 
-}
+			
+
+			.header{
+				position:fixed;
+				top:0;
+				width:100%;
+				background:white;
+				z-index:1000;
+			}
+
+			.nav-container{
+				display:flex;
+				justify-content:space-between;
+				align-items:center;
+				padding:15px 20px;
+			}
+
+			.sb-nav{
+				display:flex;
+				gap:25px;
+			}
+
+			.sb-nav a{
+				text-decoration:none;
+				color:black;
+			}
+
+			.sb-mobile-nav-btn{
+				display:none;
+				font-size:28px;
+				background:none;
+				border:none;
+				cursor:pointer;
+			}
+
+
+		@media (max-width:1032px){
+
+			.sb-mobile-nav-btn{
+				display:block;
+		}
+
+			.sb-nav{
+				position:absolute;
+				top:60px;
+				left:0;
+				width:100%;
+				background:white;
+				flex-direction:column;
+				max-height:0;
+				overflow:hidden;
+				transition:0.3s;
+				z-index: 1001;
+				align-items: center;
+			}
+
+			.sb-nav.active{
+				max-height:300px;
+			}
+
+			.sb-nav a{
+				padding:15px;
+				border-top:1px solid #eee;
+			}
+
+		}
 
 /*block_Greed*/
 			.chess-section{
@@ -12710,6 +12717,103 @@ border-top:1px solid #eee;
 			}
 		}
 
+/*иконка для связи viber*/
+
+			/* .viber-btn{
+				display:inline-flex;
+				align-items:center;
+				justify-content:center;
+				width:40px;
+				height:40px;
+				background:#7360F2;
+				border-radius:50%;
+			}
+
+			.viber-btn svg{
+				width:22px;
+				height:22px;
+				fill:#fff;
+			} */
+
+			.contact-details__viber{
+				display: block;
+				margin-top: 10px
+			}
+			.contact-details__viber{
+				display: flex;
+				align-items: flex-start;
+				gap: 10px
+			}
+
+			.contact-details__viber svg{
+				flex-shrink: 0;
+				width: 1.25rem;
+				height: 1.25rem
+			}
+
+		@media (max-width: 767px) {
+
+			.contact-details__viber svg{
+				width: 1rem;
+				height: 1rem;
+				margin-right: 8px
+			}
+		}
+
+		.sb-section-opt-light .contact-details__viber svg{
+			fill: #595959
+		}
+
+		.sb-section-opt-dark .contact-details__viber svg{
+			fill: #fff
+		}
+
+		.sb-section-opt-accent .contact-details__viber svg{
+			fill: #fff
+		}
+
+		.contact-details__viber a,
+		.contact-details__viber a:link,
+		.contact-details__viber a:visited{
+			font-size: 1.125rem;
+			font-style: normal;
+			font-family: roboto;
+			font-weight: 400;
+			line-height: 1;
+			letter-spacing: 0px;
+			text-transform: none
+		}
+
+		@media (max-width: 991px) {
+
+			.contact-details__viber a,
+			.contact-details__viber a:link,
+			.contact-details__viber a:visited{
+				font-size: 1rem;
+				font-style: normal;
+				font-family: roboto;
+				font-weight: 400;
+				line-height: 1;
+				letter-spacing: 0px;
+				text-transform: none
+			}
+		}
+
+		@media (max-width: 767px) {
+
+			.contact-details__viber a,
+			.contact-details__viber a:link,
+			.contact-details__viber a:visited{
+				font-size: 1rem;
+				font-style: normal;
+				font-family: roboto;
+				font-weight: 400;
+				line-height: 1;
+				letter-spacing: 0px;
+				text-transform: none
+			}
+		}
+
 	</style>
 
 
@@ -12756,7 +12860,7 @@ border-top:1px solid #eee;
 		</a>
 
 
-	<!--block1-->
+<!--block1-->
 <!-- Можно Добавить стиль в шапку для фиксации вверху экрана
  style="position: fixed; top:0; width:100%; height: 80px; z-index: 1000;"-->
 
@@ -12884,8 +12988,7 @@ border-top:1px solid #eee;
 				class="sb-background " 
 				data-bg="linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
             	url(&quot;https://www.dl.dropboxusercontent.com/scl/fi/5nrabj38b51hrx8l4ftcu/sungora_titul2.jpg?rlkey=iu8yzq110m0kp0k8kbqefryxz&st=hd2k23pa&dl=0)" 
-				style="background-image:               
-                linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),   
+				style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),   
               	url(&quot;https://www.dl.dropboxusercontent.com/scl/fi/5nrabj38b51hrx8l4ftcu/sungora_titul2.jpg?rlkey=iu8yzq110m0kp0k8kbqefryxz&st=hd2k23pa&dl=0)">
 			</div>
 
@@ -13005,111 +13108,111 @@ border-top:1px solid #eee;
 
 <!--block_greed -->
 
-<section class="chess-section">
+		<section class="chess-section">
 
-  <div class="grid-chess">
+		<div class="grid-chess">
 
-		<div class="item item-milk img1">
-		<img  alt="mapa slavske"
-				loading="lazy"
-				src="https://www.dl.dropboxusercontent.com/scl/fi/gkjvmsq5f6p9gwb5w15we/mapa.jpg?rlkey=6jzew1bivre3zqrd9oixcy2kb&st=4m9houj9&dl=0" alt="">
-		</div>
-
-		<div class="item item-milk text1">
-		<h3>Локація</h3>
-		<div-e>Котеджне містечко Sungora розташоване у південно-східної частині с.Славсько, серед живописної місцевості гірського ландшафту. Від центра села до містечка веде дорога з твердим покриттям і освітленням. Котеджне містечко Sungora має велику закриту територію, приватне озеро, ліс навколо, повну автономію, будується орієнтуючись на норми еco-friendly концепції.
-	</div-e>
-		</div>
-
-		<div class="item item-milk img2">
-		<img 	alt="slavske"
-				loading="lazy"
-				src="https://www.dl.dropboxusercontent.com/scl/fi/cln10np7pyym14r5uow3f/slavskoH1.jpg?rlkey=479zxpvtarhqy6kchffm4d74r&st=dxqb0l2s&dl=0" alt="">
-		</div>
-
-		<div class="item item-milk text2">
-		<h3>Про Славсько...</h3>
-		<div-e>Славсько — один з найперспективніших гірських курортів України. 
-	Кожен рік цей регіон відчуває зростання туристичного попиту. Цілорічний потік туристів шукають для себе привабливі напрямки активного відпочинку:  хайкінг, велосипеди, лижі, сноуборд, спа.
-		</div-e>
-		</div>
-
-		<div class="item item-milk img3">
-		<img 	alt="slavske"
-				loading="lazy"
-				src="https://www.dl.dropboxusercontent.com/scl/fi/ni0ynr6gg47ytxv2jux7l/goro2.jpg?rlkey=11wez835kxet8352my3shhnvw&st=fagobtlx&dl=0" alt="">
-		</div>
-
-		<div class="item item-milk text3">
-		<h3>Перспективи</h3>
-		<div-e>Славсько зараз має декілька гірськолижних трас і поряд будується майбутній масштабний курорт GORO Mountain Resort, що значно підвищує туристичну та інвестиційну привабливість регіону.</div-e>
-		</div>
-
-		<div class="item item-coffi img4">
-		<img 	alt="rozvitok"
-				loading="lazy"
-				src="https://www.dl.dropboxusercontent.com/scl/fi/qhmc5kpxrrcck6ig3vuz7/sungora_titul1.jpg?rlkey=n704ckul7icvij60f3u459g7r&st=x6np4e7j&dl=0" alt="">
-		</div>
-
-		<div class="item item-coffi pad text4">
-		<h3 style="color: #f5f5f5;">Концепція еco-friendly</h3>
-		<div style="color: #f5f5f5;">Від центра селища Славсько до містечка веде дорога з твердим покриттям і освітленням. 15 хвилин і ви потрапляєте в затишне красиве місце де вас чекає місцевий комфорт посеред Карпатського лісу. Містечко активно розвивається, має власну систему комунікацій, таких як опалення, водопостачання, водовідведення, супутниковий зв'язок і електропостачання. </div>
-		</div>
-	</div>
-</section>
-<section class="House" id="house">	
-	<div class="grid-house-chervona-ruta item-milk">
-		<div class="item text8"><h3>Будинок "Червона Рута"</h3></div>
-		<div class="item house img7">
-			<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="house2">
-		</div>
-		<div class="item house text7">
-			<h3>Червона рута</h3>
-			<div-e>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut labore officia soluta neque nulla magni earum, exercitationem, nihil enim doloremque quas inventore deserunt doloribus error nisi assumenda voluptatibus aliquid laborum.</div-e>
-		</div>
-		<div class="item6 img6">
-			<section class="carousel">
-				<div class="track">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
-
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
+				<div class="item item-milk img1">
+				<img  alt="mapa slavske"
+						loading="lazy"
+						src="https://www.dl.dropboxusercontent.com/scl/fi/gkjvmsq5f6p9gwb5w15we/mapa.jpg?rlkey=6jzew1bivre3zqrd9oixcy2kb&st=4m9houj9&dl=0" alt="">
 				</div>
-			</section>      
-		</div>
-	</div>
-	<div class="grid-house-edelveys item-coffi item-coffi-color">
-		<div class="item text9"><h3>Будинок "Едельвейс"</h3></div>
-		<div class="item house img10">
-			<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="house2">
-		</div>
-		<div class="item house text10">
-			<h3>Едельвейс</h3>
-			<div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut labore officia soluta neque nulla magni earum, exercitationem, nihil enim doloremque quas inventore deserunt doloribus error nisi assumenda voluptatibus aliquid laborum.</p></div>
-		</div>
-		<div class="item11 img11">
-			<section class="slider">
-				<div class="slides">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
+
+				<div class="item item-milk text1">
+				<h3>Локація</h3>
+				<div-e>Котеджне містечко Sungora розташоване у південно-східної частині с.Славсько, серед живописної місцевості гірського ландшафту. Від центра села до містечка веде дорога з твердим покриттям і освітленням. Котеджне містечко Sungora має велику закриту територію, приватне озеро, ліс навколо, повну автономію, будується орієнтуючись на норми еco-friendly концепції.
+			</div-e>
 				</div>
-			</section>      
-		</div>
-	</div>
-</section>
+
+				<div class="item item-milk img2">
+				<img 	alt="slavske"
+						loading="lazy"
+						src="https://www.dl.dropboxusercontent.com/scl/fi/cln10np7pyym14r5uow3f/slavskoH1.jpg?rlkey=479zxpvtarhqy6kchffm4d74r&st=dxqb0l2s&dl=0" alt="">
+				</div>
+
+				<div class="item item-milk text2">
+				<h3>Про Славсько...</h3>
+				<div-e>Славсько — один з найперспективніших гірських курортів України. 
+			Кожен рік цей регіон відчуває зростання туристичного попиту. Цілорічний потік туристів шукають для себе привабливі напрямки активного відпочинку:  хайкінг, велосипеди, лижі, сноуборд, спа.
+				</div-e>
+				</div>
+
+				<div class="item item-milk img3">
+				<img 	alt="slavske"
+						loading="lazy"
+						src="https://www.dl.dropboxusercontent.com/scl/fi/ni0ynr6gg47ytxv2jux7l/goro2.jpg?rlkey=11wez835kxet8352my3shhnvw&st=fagobtlx&dl=0" alt="">
+				</div>
+
+				<div class="item item-milk text3">
+				<h3>Перспективи</h3>
+				<div-e>Славсько зараз має декілька гірськолижних трас і поряд будується майбутній масштабний курорт GORO Mountain Resort, що значно підвищує туристичну та інвестиційну привабливість регіону.</div-e>
+				</div>
+
+				<div class="item item-coffi img4">
+				<img 	alt="rozvitok"
+						loading="lazy"
+						src="https://www.dl.dropboxusercontent.com/scl/fi/qhmc5kpxrrcck6ig3vuz7/sungora_titul1.jpg?rlkey=n704ckul7icvij60f3u459g7r&st=x6np4e7j&dl=0" alt="">
+				</div>
+
+				<div class="item item-coffi pad text4">
+				<h3 style="color: #f5f5f5;">Концепція еco-friendly</h3>
+				<div style="color: #f5f5f5;">Від центра селища Славсько до містечка веде дорога з твердим покриттям і освітленням. 15 хвилин і ви потрапляєте в затишне красиве місце де вас чекає місцевий комфорт посеред Карпатського лісу. Містечко активно розвивається, має власну систему комунікацій, таких як опалення, водопостачання, водовідведення, супутниковий зв'язок і електропостачання. </div>
+				</div>
+			</div>
+		</section>
+		<section class="House" id="house">	
+			<div class="grid-house-chervona-ruta item-milk">
+				<div class="item text8"><h3>Будинок "Червона Рута"</h3></div>
+				<div class="item house img7">
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="house2">
+				</div>
+				<div class="item house text7">
+					<h3>Червона рута</h3>
+					<div-e>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut labore officia soluta neque nulla magni earum, exercitationem, nihil enim doloremque quas inventore deserunt doloribus error nisi assumenda voluptatibus aliquid laborum.</div-e>
+				</div>
+				<div class="item6 img6">
+					<section class="carousel">
+						<div class="track">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
+
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
+						</div>
+					</section>      
+				</div>
+			</div>
+			<div class="grid-house-edelveys item-coffi item-coffi-color">
+				<div class="item text9"><h3>Будинок "Едельвейс"</h3></div>
+				<div class="item house img10">
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="house2">
+				</div>
+				<div class="item house text10">
+					<h3>Едельвейс</h3>
+					<div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut labore officia soluta neque nulla magni earum, exercitationem, nihil enim doloremque quas inventore deserunt doloribus error nisi assumenda voluptatibus aliquid laborum.</p></div>
+				</div>
+				<div class="item11 img11">
+					<section class="slider">
+						<div class="slides">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
+						</div>
+					</section>      
+				</div>
+			</div>
+		</section>
 
 
 <!--END block_greed -->
@@ -13131,554 +13234,18 @@ border-top:1px solid #eee;
 
 
 <!-- block2_Section4 -->
-		<section id="contact"
-			class="sb-section
-                  sb-section-opt-light option-link-decoration-border-bottom-static option-align-left option-section-background-image-fixed half-width-contact-form option-section-background-contrast-none appointment-inline-view"
-			data-sb-id="558be705-ef21-4790-b725-0091aeb4ddaf" 
-			style=" ">
-
-			<div class="container
-                sb-container-fixed
-                sb-container">
-				<!--htmlhint spec-char-escape:false -->
-
-				<div id="sb-id-234ff2b1-c273-48c3-ae09-c70614410a93" 
-					class="row
-						sb-row
-						sb-row-opt-padding-top-large
-						sb-row-opt-padding-bottom-large
-						sb-row-opt-center">
-					<!--htmlhint spec-char-escape:false -->
-
-
-					<div id="sb-id-0754e346-0a39-4a7f-8bb3-7e5473fe66ec" class="sb-column
-						col-xs-12
-						col-sm-12
-						col-md-12
-						col-lg-12
-						col-xl-12
-						col-xs-offset-0
-						col-sm-offset-0
-						col-md-offset-0
-						col-lg-offset-0
-						col-xl-offset-0
-						sb-component-contact-full" 
-						style=" ">
-
-
-						<div id="sb-id-12c760cd-7f4d-417a-aad1-5ac8092d26c4" class="sb-column-content ">
-
-							<p>
-								
-							</p>
-
-							<div class="contact-full">
-								<div class="row">
-
-<!-- Если нужно разделить блок контактов на 2 части Изменяем - Строка 13455: col-md-6 и строка 13225: col-md-5 -->
-
-									<div class="col-xs-12 col-sm-12 col-md-12">
-										<div class="contact-full__form"
-											id="contact-form-12c760cd-7f4d-417a-aad1-5ac8092d26c4">
-											<div data-aos="slide-up" data-aos-offset="120" data-aos-delay="0"
-												data-aos-duration="400" data-aos-easing="ease-in-out"
-												data-aos-once="true"
-												class="sb-section-title sb-section-alignable aos-init aos-animate"
-												data-component-field="title" data-sb-field="text" data-sb-is-link=""
-												data-sb-type="text" data-sb-uuid="47b6207c-6d88-485a-91e1-212d9e127784">
-
-												Зробіть замовлення і менеджер зателефонує вам для уточнення деталей.
-
-											</div>
-											<div data-aos="slide-up" data-aos-offset="120" data-aos-delay="50"
-												data-aos-duration="400" data-aos-easing="ease-in-out"
-												data-aos-once="true"
-												class="sb-section-subtitle sb-section-alignable aos-init aos-animate"
-												data-component-field="subtitle" data-sb-field="text" data-sb-is-link=""
-												data-sb-type="text" data-sb-uuid="a8816f82-0b03-4e15-baac-e15a3abc7a1a">
-
-												ДЗВІНОК БЕЗКОШТОВНИЙ
-											</div>
-											<div data-aos="slide-up" data-aos-offset="120" data-aos-delay="100"
-												data-aos-duration="400" data-aos-easing="ease-in-out"
-												data-aos-once="true"
-												class="sb-paragraph sb-section-alignable aos-init aos-animate"
-												data-component-field="paragraph" data-sb-field="text" data-sb-is-link=""
-												data-sb-type="rich-text"
-												data-sb-uuid="2b67e37c-4ebf-4943-abad-6663b5fc2da1">
-
-												<p>
-													
-												</p>
-											</div>
-<!-- Змінити посилання на пошту -->
-											<form data-aos="slide-up" data-aos-offset="120" data-aos-delay="0"
-												data-aos-duration="400" data-aos-easing="ease-in-out"
-												data-aos-once="true" class="form js-form aos-init aos-animate"
-												data-recaptcha-version="1" data-sb-type="contact_form"
-												data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-												data-semantic-tag-blueprint="contact-form-form" data-send-type="ajax"
-												id="UL_FORM_18de12ad-cf55-4111-8d70-72a2fffa1c7e" method="POST"
-												action="https://b12.io/contact/send/">
-
-
-												<div data-is-required="true"
-													class="form__group  form__group--required ">
-
-													<label class="form__label contact-form__label"
-														data-component-field="field" data-sb-field="custom_fields"
-														data-sb-is-link="" data-sb-type="contact_form"
-														data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-														for="unique_id_2-12c760cd-7f4d-417a-aad1-5ac8092d26c4">
-														
-														Имя
-
-														<span class="form__label-required" title="This field is required">*</span>
-													</label>
-
-													<input required="" class="form__input contact-form__input"
-														data-sb-field="custom_fields" 
-														data-sb-type="contact_form"
-														data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-														id="unique_id_2-12c760cd-7f4d-417a-aad1-5ac8092d26c4"
-														name="name" 
-														placeholder="Тарас Бульба" type="text" value="">
-
-												</div>
-
-
-
-
-												<div data-is-required="true"
-													class="form__group  form__group--required ">
-
-													<label class="form__label contact-form__label"
-														data-component-field="field" data-sb-field="custom_fields"
-														data-sb-is-link="" data-sb-type="contact_form"
-														data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-														for="unique_id_1-12c760cd-7f4d-417a-aad1-5ac8092d26c4">
-														
-														Email
-
-														address <span class="form__label-required" title="This field is required">*</span>
-													</label>
-
-													<input required="" class="form__input contact-form__input"
-														data-sb-field="custom_fields" 
-														data-sb-type="contact_form"
-														data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-														id="unique_id_1-12c760cd-7f4d-417a-aad1-5ac8092d26c4"
-														name="from_email" 
-														placeholder="email@website.com" type="email"
-														value="">
-
-												</div>
-
-												<div data-is-required="true"
-													class="form__group  form__group--required ">
-
-													<label class="form__label contact-form__label"
-														data-component-field="field" data-sb-field="custom_fields"
-														data-sb-is-link="" data-sb-type="contact_form"
-														data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-														for="unique_id_3-12c760cd-7f4d-417a-aad1-5ac8092d26c4">
-														
-														Номер Телефону
-
-														<span class="form__label-required" title="This field is required">*</span>
-													</label>
-
-													<input required="" class="form__input contact-form__input"
-														data-sb-field="custom_fields" 
-														data-sb-type="contact_form"
-														data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-														id="unique_id_3-12c760cd-7f4d-417a-aad1-5ac8092d26c4"
-														name="from_phone" 
-														placeholder="555-555-5555" type="tel"
-														value="">
-
-												</div>
-
-
-
-<!--  
-												<div class="form__group   ">
-
-													<label class="form__label contact-form__label"
-														data-component-field="field" 
-														data-sb-field="custom_fields"
-														data-sb-is-link="" 
-														data-sb-type="contact_form"
-														data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-														for="unique_id_4-12c760cd-7f4d-417a-aad1-5ac8092d26c4">
-														
-														Коментар
-
-													</label>
-
-
-
-													<textarea
-														class="form__input form__input--textarea contact-form__textarea"
-														data-sb-field="custom_fields" data-sb-type="contact_form"
-														data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-														id="unique_id_4-12c760cd-7f4d-417a-aad1-5ac8092d26c4"
-														name="message" 
-														placeholder="" 
-														rows="4">
-													</textarea>
-
-												</div>
--->
-
-
-
-												<div data-is-required="true"
-													class="form__group form__group--checkbox form__group--required ">
-
-													<div class="form__checkbox-error"
-														id="checkbox-error-message-gdpr_consent-12c760cd-7f4d-417a-aad1-5ac8092d26c4">
-														Please select at least one option.
-													</div>
-
-													<div class="form__input-checkbox-wrapper">
-														<input class="form__input form__input--checkbox"
-															id="3e040677-855d-47d0-a6c5-972b2d518a3d-12c760cd-7f4d-417a-aad1-5ac8092d26c4"
-
-															name="I allow this website to store my submission so they can respond to my inquiry."
-															
-															type="checkbox" value="Checked">
-														<label class="form__label contact-form__label "
-															data-component-field="checkbox"
-															data-sb-field="custom_fields" data-sb-is-link=""
-															data-sb-type="contact_form"
-															data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-															for="3e040677-855d-47d0-a6c5-972b2d518a3d-12c760cd-7f4d-417a-aad1-5ac8092d26c4">
-
-															Я разрешаю этому сайту хранить мою заявку, чтобы они могли ответить на мой запрос.
-
-															<span class="form__label-required" title="This field is required">*</span>
-														</label>
-													</div>
-
-
-												</div>
-
-
-
-
-												<button class="sb-button sb-button--form contact-form__btn"
-													data-component-field="form_details" 
-													data-sb-field="button_label"
-													data-sb-is-link="" 
-													data-sb-type="text"
-													data-sb-uuid="81e6ce52-f27b-4de4-9772-d28d620d82e9"
-													type="submit">
-													
-													Купити
-													
-												</button>
-
-												<input type="hidden" 
-													name="form_id"
-													value="18de12ad-cf55-4111-8d70-72a2fffa1c7e">
-
-													<input type="hidden"
-														name="next_page"
-														value="https://voskhod-staging.b12sites.com/index#success_UL_FORM_18de12ad-cf55-4111-8d70-72a2fffa1c7e">
-
-														<input
-															type="text" 
-															name="sweet_auth_token" 
-															aria-hidden="true"
-															aria-label="Auth token" 
-															style="display: none;">
-
-															<input type="hidden"
-																name="ajax" 
-																value="true">
-											</form>
-											<div class="b12-form-error" style="display: none;">
-
-												Вибачте, ми не змогли надіслати форму. Будь ласка, перегляньте помилки і спробуйте ще раз.
-
-											</div>
-
-										</div>
-									</div>
-<!-- Блок Контактов -->
-<!-- Если нужно разделить блок контактов на 2 части Изменяем - Строка 13455: col-md-6 и строка 13225: col-md-5 -->
-									
-									<div class="col-xs-12 col-sm-12 col-md-12">
-										<div class="contact-full__location">
-
-											<div data-aos="slide-up" data-aos-offset="120" data-aos-delay="0"
-												data-aos-duration="400" data-aos-easing="ease-in-out"
-												data-aos-once="true"
-												class="contact-details vcard sb-section-alignable aos-init aos-animate">
-<!--
-												<div class="contact-details__row contact-details__contact">
-													<div class="h3 contact-details__title" data-component-field="title"
-														data-sb-field="text" data-sb-is-link="" data-sb-type="text"
-														data-sb-uuid="47b6207c-6d88-485a-91e1-212d9e127784">
-														
-														Свяжитесь с нами
-
-													</div>
-
-													<div class="contact-details__email" 
-														data-component-field="contact"
-														data-sb-field="email" 
-														data-sb-is-link="" 
-														data-sb-type="email"
-														data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-														<svg height="8px" version="1.1" viewBox="0 0 12 8" width="12px"
-															xmlns="http://www.w3.org/2000/svg">
-															<path
-																d="M0 8h11.2V0H0v8zm5.6-2.673l1.095-.914 3.522 2.947H.983l3.522-2.947 1.095.914zm1.594-1.33l3.366-2.81v5.626L7.194 3.996zM5.6 4.492L.985.64h9.23L5.6 4.493zm-1.594-.497L.64 6.813V1.186l3.366 2.81z"
-																fill-rule="nonzero" stroke="none" stroke-width="1">
-															</path>
-														</svg>
-														
-														<a aria-label="Email us at s3248729@gmail.com" class="email"
-															data-component-field="contact" data-sb-field="email"
-															data-sb-is-link="" data-sb-type="email"
-															data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83"
-															href="mailto:s3248729@gmail.com">
-															
-															s3248729@gmail.com
-															
-														</a>
-													</div>
-
-
-
-												</div>
-
--->
-<!--
-												<div class="contact-details__row contact-details__location">
-													<div class="h3 contact-details__title">
-														
-														Наша адреса
-														
-													</div>
-													<p class="adr contact-details__address">
-														<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-															<path
-																d="M256 0C156.748 0 76 80.748 76 180c0 33.534 9.289 66.26 26.869 94.652l142.885 230.257A15 15 0 00258.499 512h.119a14.997 14.997 0 0012.75-7.292L410.611 272.22C427.221 244.428 436 212.539 436 180 436 80.748 355.252 0 256 0zm128.866 256.818L258.272 468.186l-129.905-209.34C113.734 235.214 105.8 207.95 105.8 180c0-82.71 67.49-150.2 150.2-150.2S406.1 97.29 406.1 180c0 27.121-7.411 53.688-21.234 76.818z">
-															</path>
-															<path
-																d="M256 90c-49.626 0-90 40.374-90 90 0 49.309 39.717 90 90 90 50.903 0 90-41.233 90-90 0-49.626-40.374-90-90-90zm0 150.2c-33.257 0-60.2-27.033-60.2-60.2 0-33.084 27.116-60.2 60.2-60.2s60.1 27.116 60.1 60.2c0 32.683-26.316 60.2-60.1 60.2z">
-															</path>
-														</svg>
-
-														<a aria-label="Our location at Varshava, 30 PL"
-															href="https://www.google.com/maps/place/Varshava,+Poland"
-															rel="noreferrer" target="_blank">
-															<span data-component-field="contact" 
-																data-sb-field="city"
-																data-sb-is-link="" 
-																data-sb-type="text"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																
-																Varshava
-																
-															</span>
-															<span
-																data-component-field="contact"
-																data-sb-field="state_province" 
-																data-sb-is-link=""
-																data-sb-type="text"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-
-																,30
-																
-															</span>
-															<span data-component-field="contact"
-																data-sb-field="country" data-sb-is-link=""
-																data-sb-type="text"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-
-																PL
-																
-															</span>
-														</a>
-
-													</p>
-												</div>
--->
-<!--  
-												<div
-													class="contact-details__row contact-details__hours sb-hours-wrapper">
-													<div class="h3 contact-details__title">
-
-														Час роботи
-
-													</div>
-													<ol aria-label="Working hours" class="hours-list">
-
-														<li class="hours-list__item">
-															<div class="hours-list__day">Mon<span
-																	class="hidden-xs-down hidden-sm-down hidden-md-down">day</span>
-															</div>
-															<div class="hours-list__from" data-component-field="contact"
-																data-sb-field="monday_from" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																9:00am</div>
-															<div class="hours-list__dash">–</div>
-															<div class="hours-list__to" data-component-field="contact"
-																data-sb-field="monday_to" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																10:00pm</div>
-														</li>
-
-
-														<li class="hours-list__item">
-															<div class="hours-list__day">Tue<span
-																	class="hidden-xs-down hidden-sm-down hidden-md-down">sday</span>
-															</div>
-															<div class="hours-list__from" data-component-field="contact"
-																data-sb-field="tuesday_from" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																9:00am</div>
-															<div class="hours-list__dash">–</div>
-															<div class="hours-list__to" data-component-field="contact"
-																data-sb-field="tuesday_to" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																10:00pm</div>
-														</li>
-
-
-														<li class="hours-list__item">
-															<div class="hours-list__day">Wed<span
-																	class="hidden-xs-down hidden-sm-down hidden-md-down">nesday</span>
-															</div>
-															<div class="hours-list__from" data-component-field="contact"
-																data-sb-field="wednesday_from" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																9:00am</div>
-															<div class="hours-list__dash">–</div>
-															<div class="hours-list__to" data-component-field="contact"
-																data-sb-field="wednesday_to" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																10:00pm</div>
-														</li>
-
-
-														<li class="hours-list__item">
-															<div class="hours-list__day">Thu<span
-																	class="hidden-xs-down hidden-sm-down hidden-md-down">rsday</span>
-															</div>
-															<div class="hours-list__from" data-component-field="contact"
-																data-sb-field="thursday_from" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																9:00am</div>
-															<div class="hours-list__dash">–</div>
-															<div class="hours-list__to" data-component-field="contact"
-																data-sb-field="thursday_to" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																10:00pm</div>
-														</li>
-
-
-														<li class="hours-list__item">
-															<div class="hours-list__day">Fri<span
-																	class="hidden-xs-down hidden-sm-down hidden-md-down">day</span>
-															</div>
-															<div class="hours-list__from" data-component-field="contact"
-																data-sb-field="friday_from" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																9:00am</div>
-															<div class="hours-list__dash">–</div>
-															<div class="hours-list__to" data-component-field="contact"
-																data-sb-field="friday_to" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																10:00pm</div>
-														</li>
-
-
-														<li class="hours-list__item">
-															<div class="hours-list__day">Sat<span
-																	class="hidden-xs-down hidden-sm-down hidden-md-down">urday</span>
-															</div>
-															<div class="hours-list__from" data-component-field="contact"
-																data-sb-field="saturday_from" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																9:00am</div>
-															<div class="hours-list__dash">–</div>
-															<div class="hours-list__to" data-component-field="contact"
-																data-sb-field="saturday_to" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																6:00pm</div>
-														</li>
-
-
-														<li class="hours-list__item">
-															<div class="hours-list__day">Sun<span
-																	class="hidden-xs-down hidden-sm-down hidden-md-down">day</span>
-															</div>
-															<div class="hours-list__from" data-component-field="contact"
-																data-sb-field="sunday_from" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																9:00am</div>
-															<div class="hours-list__dash">–</div>
-															<div class="hours-list__to" data-component-field="contact"
-																data-sb-field="sunday_to" data-sb-is-link=""
-																data-sb-type="time"
-																data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
-																12:00pm</div>
-														</li>
-
-													</ol>
-												</div>
--->
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
-						</div>
-
-					</div>
-
-
-				</div>
-
-
-			</div>
-		</section>
+		
 <!-- END block2_Section4 -->
 
 	</div>
-	<!--end block2-->
+<!--end block2-->
 	
 
 
 
-	<!--block3-->
-	<div id="sb-footer">
-		<script
-			src="./js/bundle-26df06bbde665912c7803cd668f15047.js">
-		</script>
-		<!--htmlhint attr-no-duplication:false -->
-
-	<!-- block3_Section1 -->
+<!--block3-->
+	
+<!-- block3_Section1 -->
 
 		<section id="sb-id-9194b83a-b599-4f74-891d-003e0249c1f6"
 			class="sb-section
@@ -13692,94 +13259,146 @@ border-top:1px solid #eee;
 				<!--htmlhint spec-char-escape:false -->
 
 				<div id="sb-id-828822e0-a9cd-49b3-aea8-c2667a7b3946" class="row
-              sb-row
-              sb-row-opt-padding-top-large
-              sb-row-opt-padding-bottom-large
-              sb-row-opt-center
-              
-              ">
+						sb-row
+						sb-row-opt-padding-top-large
+						sb-row-opt-padding-bottom-large
+						sb-row-opt-center">
 					<!--htmlhint spec-char-escape:false -->
 
 
 					<div id="sb-id-7d754a79-4b4f-436f-8a55-89da5dabf9c8" class="sb-column
-              col-xs-12
-              col-sm-12
-              col-md-12
-              col-lg-12
-              col-xl-12
-              col-xs-offset-0
-              col-sm-offset-0
-              col-md-offset-0
-              col-lg-offset-0
-              col-xl-offset-0
-              
-              sb-component-footer-simple-social
-              
-              
-              " style=" ">
+							col-xs-12
+							col-sm-12
+							col-md-12
+							col-lg-12
+							col-xl-12
+							col-xs-offset-0
+							col-sm-offset-0
+							col-md-offset-0
+							col-lg-offset-0
+							col-xl-offset-0
+							
+							sb-component-footer-simple-social" 
+						style=" ">
 
 
 						<div id="sb-id-1f69b860-9c23-4694-8408-9a1c6c8a9fd0" class="sb-column-content ">
-
-							<p>
-
-
-							</p>
-							<div class="sb-footer sb-footer-simple-social vcard sb-section-alignable"
-								data-sb-uuid="1f69b860-9c23-4694-8408-9a1c6c8a9fd0">
-								<div class="row">
-
-
-	<!-- Заменити текст -->
-
-									<div
-										class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sb-footer-simple-social__nav-col">
-										<div class="sb-footer-simple-social__nav-wrapper">
-											<h2 class="sb-title sb-footer__branding">
-												<a class="brand sb-brand-default org"
-													href="https://voskhod-staging.b12sites.com/" skip-data-sb="">
-
-													Lunchbox
-
-												</a>
-											</h2>
-											<nav aria-label="Secondary" class="sb-footer__nav">
-												<ul class="sb-footer__nav-list">
-
-
-
-
-
-												</ul>
-											</nav>
-										</div>
-									</div>
-
-	<!-- END Заменити текст -->
+	
+<!--contacts-->			
+							<div class="contact-details__row contact-details__contact">
+								<div class="h3 contact-details__title" data-component-field="title"
+									data-sb-field="text" data-sb-is-link="" data-sb-type="text"
+									data-sb-uuid="47b6207c-6d88-485a-91e1-212d9e127784">
+									
+									Свяжитесь с нами
 
 								</div>
+
+								<div class="contact-details__telephone" 
+									data-component-field="contact"
+									data-sb-field="telephone" 
+									data-sb-is-link="" 
+									data-sb-type="telephone"
+									data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
+									
+									<svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path 
+											d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.3 22 2 13.7 2 3c0-.6.4-1 1-1h4.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.2z" 
+											fill="currentColor"/>
+										</svg>
+									
+									
+										
+										+38 068 0832442, +38 068 8771363
+										
+								</div>	
+								<div class="contact-details__viber" 
+									data-component-field="contact"
+									data-sb-field="viber" 
+									data-sb-is-link="" 
+									data-sb-type="viber"
+									data-sb-uuid="viber768f7-4623-4faf-a6bb-e10a1a67dc84">
+
+								
+									<svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<path fill="#7360F2" d="M12 2C6.48 2 2 5.94 2 10.8c0 2.64 1.36 5.02 3.5 6.68V22l4.26-2.34c.71.2 1.46.3 2.24.3 5.52 0 10-3.94 10-8.8S17.52 2 12 2zm3.8 12.1c-.18.5-1.03.93-1.43 1-.36.06-.83.09-1.33-.08-.31-.1-.7-.23-1.2-.44-2.1-.9-3.48-3.05-3.6-3.2-.11-.15-.86-1.13-.86-2.16s.54-1.54.74-1.75c.19-.21.42-.26.56-.26.14 0 .29 0 .4.01.13.01.31-.05.48.36.18.42.6 1.45.66 1.55.06.11.09.24.02.38-.07.15-.11.24-.23.36-.11.13-.23.29-.34.39-.11.1-.23.21-.1.41.13.21.57.95 1.24 1.55.85.77 1.57 1 1.8 1.12.23.11.36.1.49-.06.14-.15.58-.68.74-.92.15-.24.31-.2.52-.12.21.08 1.34.63 1.57.75.23.11.38.17.44.27.06.1.06.58-.12 1.08z"/>
+									</svg>
+									
+									<a href="viber://forward?text=Добрий день!%20Цікавить%20будинок%20у%20Славському%20в%20КМ%20Sungora" target="_blank">
+											Написать в Viber
+									</a>
+								</div>
+
+
+							</div>
+							
+							<div class="contact-details__row contact-details__location">
+								<div class="h3 contact-details__title">
+									
+									Наша адреса
+									
+								</div>
+								<p class="adr contact-details__address">
+									<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M256 0C156.748 0 76 80.748 76 180c0 33.534 9.289 66.26 26.869 94.652l142.885 230.257A15 15 0 00258.499 512h.119a14.997 14.997 0 0012.75-7.292L410.611 272.22C427.221 244.428 436 212.539 436 180 436 80.748 355.252 0 256 0zm128.866 256.818L258.272 468.186l-129.905-209.34C113.734 235.214 105.8 207.95 105.8 180c0-82.71 67.49-150.2 150.2-150.2S406.1 97.29 406.1 180c0 27.121-7.411 53.688-21.234 76.818z">
+										</path>
+										<path
+											d="M256 90c-49.626 0-90 40.374-90 90 0 49.309 39.717 90 90 90 50.903 0 90-41.233 90-90 0-49.626-40.374-90-90-90zm0 150.2c-33.257 0-60.2-27.033-60.2-60.2 0-33.084 27.116-60.2 60.2-60.2s60.1 27.116 60.1 60.2c0 32.683-26.316 60.2-60.1 60.2z">
+										</path>
+									</svg>
+
+									<a aria-label="вулиця Устияновича, 117-Ж, Славсько, Львівська область"
+										href="https://maps.app.goo.gl/Swk6SPNthHZmkDFp7" target="_blank">
+										<span data-component-field="contact" 
+											data-sb-field="city"
+											data-sb-is-link="" 
+											data-sb-type="text"
+											data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
+											
+											Львівська обл, c. Славсько, вулиця Устияновича
+											
+										</span>
+										<span
+											data-component-field="contact"
+											data-sb-field="state_province" 
+											data-sb-is-link=""
+											data-sb-type="text"
+											data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
+
+											, 117-Ж
+											
+										</span>
+										<span data-component-field="contact"
+											data-sb-field="country" data-sb-is-link=""
+											data-sb-type="text"
+											data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
+
+											, UK
+											
+										</span>
+									</a>
+
+								</p>
+							</div>
+							
+							<div class="sb-footer sb-footer-simple-social vcard sb-section-alignable"
+								data-sb-uuid="1f69b860-9c23-4694-8408-9a1c6c8a9fd0">
+								
 								<div class="by-b12">
 									<a href="index.html#home"
 										rel="nofollow noopener noreferrer" target="_blank">
 										
 										Web design by 
 										
-										<svg
-											id="b12-logo" viewBox="0 0 179.8 79.2" xmlns="http://www.w3.org/2000/svg">
-											<title>
-
-												B12
-
-											</title>
-											<path
-												d="M53.9,46a12.87,12.87,0,0,0-4.6-2.9c-2.5-.8-3.2-.9-10.1-.9H28.3V69.5h10c9.2,0,10.5-.2,13.8-2.2s5.4-6.4,5.4-11.3c0-4.2-1.3-7.7-3.6-10M51.6,11.4A9.44,9.44,0,0,0,47.1,9c-2.3-.6-3.5-.6-10-.6H28.2V33.2h11c4.4,0,8-.6,10.2-1.6,3.5-1.5,5.8-5.8,5.8-10.7a12.37,12.37,0,0,0-3.6-9.5M71.8,68.5a16,16,0,0,1-6.1,6.3,19.75,19.75,0,0,1-9,2.8c-1.6.1-4.5.1-8.6.1H0V69.3H6.4a9.59,9.59,0,0,0,4-.5,3.35,3.35,0,0,0,1.5-1.6,5.59,5.59,0,0,0,.7-2.6c0-.6.1-1.6.1-3.3v-45c0-1.5-.1-2.7-.1-3.3a5.36,5.36,0,0,0-.7-2.6c-.7-1.6-2.1-2.1-5.5-2.1H0V0H36.6c3.9,0,6.9.1,9,.1C54,.3,60,2,65.1,5.6A17,17,0,0,1,72.3,20a16.15,16.15,0,0,1-5.4,12.6c-2.8,2.6-4.8,3.6-10.1,5.1,5.4,1.4,6.9,2,10,4,4.9,3,7.8,9,7.8,15.8a23,23,0,0,1-2.8,11">
-											</path>
-											<path
-												d="M78.5,77.7V69.3h7a12,12,0,0,0,3.9-.4,3.71,3.71,0,0,0,1.4-1.6,5.53,5.53,0,0,0,.7-2.5c0-.6.1-1.6.1-3V29.2H78.5V21.7c10.7-.1,14.1-2.2,16.8-10.4h10V58.5l.1,3.3a19.58,19.58,0,0,0,.1,3,5.73,5.73,0,0,0,.6,2.5c.8,1.6,2,2,5.4,2H118v8.4Z">
-											</path>
-											<path
-												d="M179.2,64.3c-1.4,9.8-7.4,14.9-17.1,14.9-5.5,0-9.9-1.4-20.3-6.5-3-1.4-4.7-2-6.2-2-3.2,0-5.1,1.9-5.1,5.3v1.6h-7.7c-.1-1.1-.1-2-.1-2.6a33.4,33.4,0,0,1,2.1-11.4c2.5-6.5,6.8-10.6,16.3-15.2q6.45-3.15,9-4.5a24.88,24.88,0,0,0,6.4-4.6,13.54,13.54,0,0,0,3.9-9.2c0-7.7-5.6-12.5-14.6-12.5-7.8,0-12.2,2.8-14,8.9a9,9,0,0,1,4.2-1.1c4.3,0,7.4,3.3,7.4,7.9,0,5.3-3.5,8.8-8.8,8.8-6.5,0-10.8-4.8-10.8-12a19.15,19.15,0,0,1,6.9-14.5c4.9-4.2,10.8-6.1,19.4-6.1,15.9,0,26.7,8.8,26.7,21.9,0,10.9-6.2,17-21,20.9C142,56,140.6,56.5,136,60.4c-2.3,1.9-3.2,3.2-4.2,6.6,3.4-2.8,5.8-3.7,10.5-3.7a27.28,27.28,0,0,1,4.1.3l9.7,1.6a46.32,46.32,0,0,0,6.2.6c7.5,0,10.7-3.3,10.8-11.7H180a100.9,100.9,0,0,1-.8,10.2">
-											</path>
+										<svg xmlns="http://www.w3.org/2000/svg" width="93" height="30">
+											<text x="0" y="12"
+													font-family="aria, serif"
+													font-size="1.125rem"
+													fill="#f5f5f5"
+													aria-current="">
+												S&amp;A-design
+											</text>
 										</svg>
 									</a>
 								</div>
@@ -13796,7 +13415,7 @@ border-top:1px solid #eee;
 
 			</div>
 		</section>
-	<!-- END block3_Section1 -->
+<!-- END block3_Section1 -->
 
 		<script>
 			var AOS;
@@ -13825,7 +13444,7 @@ border-top:1px solid #eee;
 
 
 	</div>
-	<!--end block3-->
+<!--end block3-->
 
 	<div id="sb-popup">
 
@@ -13871,43 +13490,7 @@ border-top:1px solid #eee;
 
 	</div>
 
-	<div>
-		<div class="grecaptcha-badge" 
-			data-style="bottomright"
-			style="width: 256px; 
-					height: 60px; 
-					display: block; 
-					transition: right 0.3s; 
-					position: fixed; 
-					bottom: 14px; 
-					right: -186px; 
-					box-shadow: gray 0px 0px 5px; 
-					border-radius: 2px; 
-					overflow: hidden;">
-
-			<div class="grecaptcha-logo">
-				<iframe title="reCAPTCHA" width="256" height="60" role="presentation"
-					name="a-cywk9ka1ozcw" frameborder="0" scrolling="no"
-					sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-					src="./js/anchor.html">
-				</iframe>
-			</div>
-			<div class="grecaptcha-error"></div>
-				<textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
-					class="g-recaptcha-response"
-					style="width: 250px; 
-							height: 40px; 
-							border: 1px solid rgb(193, 193, 193); 
-							margin: 10px 25px; 
-							padding: 0px; 
-							resize: none; 
-							display: none;">
-				</textarea>
-		</div>
-		<iframe style="display: none;"
-			src="./js/saved_resource.html">
-		</iframe>
-	</div>
+	
 
 
 	<script>
