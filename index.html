@@ -12422,70 +12422,92 @@
 
 			
 
-			.header{
-				position:fixed;
-				top:0;
-				width:100%;
-				background:white;
-				z-index:1000;
-			}
+			.sb-hero__title h1{
+	font-size: 3.25rem;
+	font-style: normal;
+	font-family: roboto;
+	font-weight: 600;
+	line-height: 1.25;
+	letter-spacing: 0px;
+	text-transform: none;
+	margin: 0 0 10px
+}
 
-			.nav-container{
-				display:flex;
-				justify-content:space-between;
-				align-items:center;
-				padding:15px 20px;
-			}
+.sb-hero__title h2{
+	font-size: 2.25rem;
+	font-style: normal;
+	font-family: roboto;
+	font-weight: 600;
+	line-height: 1.25;
+	letter-spacing: 0px;
+	text-transform: none;
+	margin: 0 0 10px;
+}
 
-			.sb-nav{
-				display:flex;
-				gap:25px;
-			}
+.header{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+z-index:1000;
+}
 
-			.sb-nav a{
-				text-decoration:none;
-				color:black;
-			}
+.nav-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
 
-			.sb-mobile-nav-btn{
-				display:none;
-				font-size:28px;
-				background:none;
-				border:none;
-				cursor:pointer;
-			}
+.sb-nav{
+display:flex;
+gap:25px;
+}
+
+.sb-nav a{
+text-decoration:none;
+color:black;
+}
+
+.sb-mobile-nav-btn{
+display:none;
+font-size:28px;
+background:none;
+border:none;
+cursor:pointer;
+}
 
 
-		@media (max-width:1032px){
+@media (max-width:1032px){
 
-			.sb-mobile-nav-btn{
-				display:block;
-		}
+.sb-mobile-nav-btn{
+display:block;
+}
 
-			.sb-nav{
-				position:absolute;
-				top:60px;
-				left:0;
-				width:100%;
-				background:white;
-				flex-direction:column;
-				max-height:0;
-				overflow:hidden;
-				transition:0.3s;
-				z-index: 1001;
-				align-items: center;
-			}
+.sb-nav{
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+background:white;
+flex-direction:column;
+max-height:0;
+overflow:hidden;
+transition:0.3s;
+z-index: 1001;
+align-items: center;
+}
 
-			.sb-nav.active{
-				max-height:300px;
-			}
+.sb-nav.active{
+max-height:300px;
+}
 
-			.sb-nav a{
-				padding:15px;
-				border-top:1px solid #eee;
-			}
+.sb-nav a{
+padding:15px;
+border-top:1px solid #eee;
+}
 
-		}
+}
 
 /*block_Greed*/
 			.chess-section{
@@ -12501,7 +12523,7 @@
 			.grid-chess{
 				display:grid;
 				grid-template-columns:repeat(3,1fr);
-				grid-template-rows:repeat(4,1fr);
+				grid-template-rows:repeat(2,1fr) 620px 150px;
 
 				grid-template-areas:
 				"text1  img2 text3 "
@@ -12536,6 +12558,20 @@
 				"text9 text9"
 				"img10 text10"
 				"img11 img11";
+
+				width:100%;
+  				aspect-ratio:16/9;   /* сохраняет пропорции 1280x720 */
+			}
+
+			.grid-house-shaphran{
+				display:grid;
+				grid-template-columns:repeat(2,1fr);
+				grid-template-rows:100px 360px 1fr;
+
+				grid-template-areas:
+				"text11 text11"
+				"img12 text12"
+				"img13 img13";
 
 				width:100%;
   				aspect-ratio:16/9;   /* сохраняет пропорции 1280x720 */
@@ -12585,7 +12621,7 @@
 			.text3{grid-area:text3;}
 
 			.img4{grid-column: 1/4;}
-			.text4{grid-column: 1/4; padding: 0 4vw 4vw 4vw;}
+			.text4{grid-column: 1/4; padding: 4vw 4vw 4vw 4vw;}
 
 			.img6{grid-column: 1/3; padding: 4vw 0 4vw 0;}
 
@@ -12600,6 +12636,12 @@
 			.text10{grid-area:text10;}
 
 			.img11{grid-column: 1/3; padding: 4vw 0 4vw 0;}
+			.text11{grid-column: 1/3; padding: 4vw 0 4vw 0;}
+
+			.img12{grid-area:img12;}
+			.text12{grid-area:text12;}
+
+			.img13{grid-column: 1/3; padding: 4vw 0 4vw 0;}
 
 			.text{
 				background:#f5f5f5;
@@ -12633,11 +12675,7 @@
 					"text8"
 					"img7"
 					"text7"
-					"img6"
-					"text9"
-					"img10"
-					"text10"
-					"img11";
+					"img6";
 			}
 
 			.grid-house-edelveys{
@@ -12649,6 +12687,17 @@
 					"img10"
 					"text10"
 					"img11";
+			}
+
+			.grid-house-shaphran{
+				grid-template-columns:1fr;
+				grid-template-rows:auto;
+
+				grid-template-areas:
+					"text11"
+					"img12"
+					"text12"
+					"img13";
 			}
 
 		}
@@ -12734,7 +12783,7 @@
 				height:22px;
 				fill:#fff;
 			} */
-/*
+
 			.contact-details__viber{
 				display: block;
 				margin-top: 10px
@@ -12813,13 +12862,14 @@
 				text-transform: none
 			}
 		}
-*/
+
 /*messengers*/
 /*профессиональные кнопки*/
 
 			.messenger-bar{
 				display:flex;
 				gap:12px;
+				margin-top: 10px;
 			}
 
 			.messenger{
@@ -12992,7 +13042,7 @@
 											<a class=" sb-link sb-nav__link " href="index.html#house">Будинки</a>
 										</li>
 										<li class="sb-nav__item   ">
-											<a class=" sb-link sb-nav__link " href="index.html#contact">Контакты</a>
+											<a class=" sb-link sb-nav__link " href="index.html#sb-id-9194b83a-b599-4f74-891d-003e0249c1f6">Контакты</a>
 										</li>
 									</ul>
 								</nav>
@@ -13085,26 +13135,21 @@
 								<div class="sb-hero__content-wrapper">
 
 <!-- Змінити заголовок -->
+									<h2 class=" sb-hero__title " 
+										data-sb-uuid="c0ca977f-f1e1-4871-ac31-5c6e1839f321"> 
+											Котеджноє містечко SUNGORA
+									</h2>
 									<h1 class=" sb-hero__title " 
 										data-sb-uuid="c0ca977f-f1e1-4871-ac31-5c6e1839f321"> 
-											Котеджне містечко SUNGORA 
+											Продаж будинків 
 									</h1>
 <!-- END Змінити заголовок -->
 <!-- Можна Змінити кнопку -->
 								 <h1 class=" sb-hero__subtitle " 
 										data-sb-uuid="c0ca977f-f1e1-4871-ac31-5c6e1839f321">
-										Сучасні котеджі від 70 кв.м.
+										Від 2400 у.о. за кв.м.
 								 </h1> 
-<!-- Можна розташувати текст  (css: 9027)-->
 
-									<h1 class=" sb-hero__subtitle " 
-										data-sb-uuid="c0ca977f-f1e1-4871-ac31-5c6e1839f321">
-
-										від 2400 у.о. за кв.м. 
-									
-									</h1> 	
-
-<!-- END Можна розташувати текст -->
 
 <!-- Можна розташувати текст (css: 9073)-->
 
@@ -13123,8 +13168,8 @@
 										data-sb-uuid="84f433fb-4990-4df3-842d-418685a362c4">
 
 										250 грн
-									-->
-									</h3> 	
+									
+									</h3> -->	
 
 <!-- END Можна розташувати текст -->
 								</div>
@@ -13173,7 +13218,7 @@
 						src="https://www.dl.dropboxusercontent.com/scl/fi/gkjvmsq5f6p9gwb5w15we/mapa.jpg?rlkey=6jzew1bivre3zqrd9oixcy2kb&st=4m9houj9&dl=0" alt="">
 				</div>
 
-				<div class="item item-milk text1">
+				<div class="item item-milk text1" id="location-1">
 				<h3>Локація</h3>
 				<div-e>Котеджне містечко Sungora розташоване у південно-східної частині с.Славсько, серед живописної місцевості гірського ландшафту. Від центра села до містечка веде дорога з твердим покриттям і освітленням. Котеджне містечко Sungora має велику закриту територію, приватне озеро, ліс навколо, повну автономію, будується орієнтуючись на норми еco-friendly концепції.
 			</div-e>
@@ -13188,7 +13233,7 @@
 				<div class="item item-milk text2">
 				<h3>Про Славсько...</h3>
 				<div-e>Славсько — один з найперспективніших гірських курортів України. 
-			Кожен рік цей регіон відчуває зростання туристичного попиту. Цілорічний потік туристів шукають для себе привабливі напрямки активного відпочинку:  хайкінг, велосипеди, лижі, сноуборд, спа.
+			Кожен рік цей регіон відчуває зростання туристичного попиту. Цілорічний потік туристів шукають для себе привабливі напрямки активного відпочинку:  хайкінг, велосипеди, лижі, сноуборд, SPA.
 				</div-e>
 				</div>
 
@@ -13200,18 +13245,18 @@
 
 				<div class="item item-milk text3">
 				<h3>Перспективи</h3>
-				<div-e>Славсько зараз має декілька гірськолижних трас і поряд будується майбутній масштабний курорт GORO Mountain Resort, що значно підвищує туристичну та інвестиційну привабливість регіону.</div-e>
+				<div-e>Славсько зараз має декілька гірськолижних трас на схілах гір Захар Беркут і Тростян. Поряд будується майбутній масштабний курорт GORO Mountain Resort. Насиченість гірськолижною інфраструктурою, а також супутніми сервісами значно підвищує туристичну та інвестиційну привабливість регіону.</div-e>
 				</div>
 
 				<div class="item item-coffi img4">
 				<img 	alt="rozvitok"
 						loading="lazy"
-						src="https://www.dl.dropboxusercontent.com/scl/fi/qhmc5kpxrrcck6ig3vuz7/sungora_titul1.jpg?rlkey=n704ckul7icvij60f3u459g7r&st=x6np4e7j&dl=0" alt="">
+						src="https://www.dl.dropboxusercontent.com/scl/fi/auty9ygetja4sm1jvrobe/master-plan-1260x620.png?rlkey=rpeuue9njag0urrtr1p4rsz1r&st=4an816cz&dl=0" alt="">
 				</div>
 
-				<div class="item item-coffi pad text4">
+				<div class="item item-coffi text4">
 				<h3 style="color: #f5f5f5;">Концепція еco-friendly</h3>
-				<div style="color: #f5f5f5;">Від центра селища Славсько до містечка веде дорога з твердим покриттям і освітленням. 15 хвилин і ви потрапляєте в затишне красиве місце де вас чекає місцевий комфорт посеред Карпатського лісу. Містечко активно розвивається, має власну систему комунікацій, таких як опалення, водопостачання, водовідведення, супутниковий зв'язок і електропостачання. </div>
+				<div style="color: #f5f5f5;">Містечко активно розвивається, має власну систему комунікацій, таких як опалення, водопостачання, водовідведення, супутниковий зв'язок і електропостачання.</div>
 				</div>
 			</div>
 		</section>
@@ -13219,28 +13264,31 @@
 			<div class="grid-house-chervona-ruta item-milk">
 				<div class="item text8"><h3>Будинок "Червона Рута"</h3></div>
 				<div class="item house img7">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="house2">
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/se22sqxyy3jnxsjn8v1f3/chervona_ruta_1.jpg?rlkey=6oz97n2txtj7nj3i46lqlww47&st=23nwd745&dl=0" alt="house2">
 				</div>
 				<div class="item house text7">
-					<h3>Червона рута</h3>
-					<div-e>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut labore officia soluta neque nulla magni earum, exercitationem, nihil enim doloremque quas inventore deserunt doloribus error nisi assumenda voluptatibus aliquid laborum.</div-e>
+					<div>Будинок загальною площею 45 кв.м. Повністю мебльований. Оснащений елітною європейською технікою, підігрівом підлоги, каміном та просторою терасою. Має вітальню з вбудованою кухнею та 2 окремими кімнатами (спальнями). Побудований з використанням енергоефективних та екологічних матеріалів, з інтегрованою системою безперебійних альтернативних систем живлення. Опалення центральне та електричне автономне, терморегулятори, кондиціонер (інвертор), аварійне живлення, блискавкозахист.</br>
+						Центральне водопостачання (свердловина) та водовідведення, централізований вивіз сміття.
+					</div>
 				</div>
 				<div class="item6 img6">
 					<section class="carousel">
 						<div class="track">
-							<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
+							
 							<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
 							<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
 							<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
 							<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
 							<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/odtqub1pol9ibbovj4x4r/chervona_ruta_7.jpg?rlkey=psjjcutllwfqoxvd5knb14l81&st=1r97xadk&dl=0" alt="image 7">
 
-							<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
+							
 							<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
 							<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
 							<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
 							<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
 							<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/odtqub1pol9ibbovj4x4r/chervona_ruta_7.jpg?rlkey=psjjcutllwfqoxvd5knb14l81&st=1r97xadk&dl=0" alt="image 7">
 						</div>
 					</section>      
 				</div>
@@ -13248,21 +13296,63 @@
 			<div class="grid-house-edelveys item-coffi item-coffi-color">
 				<div class="item text9"><h3>Будинок "Едельвейс"</h3></div>
 				<div class="item house img10">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="house2">
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/254s3b1fpb2abld05in00/edelveys1.jpg?rlkey=q58ir7pmqc4dx10euwmdyspp1&st=fye5nvah&dl=0" alt="house2">
 				</div>
 				<div class="item house text10">
-					<h3>Едельвейс</h3>
-					<div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut labore officia soluta neque nulla magni earum, exercitationem, nihil enim doloremque quas inventore deserunt doloribus error nisi assumenda voluptatibus aliquid laborum.</p></div>
+					<div><p>На продаж пропонується будинок загальною площею 200 кв.м.
+							Опалення центральне та електричне автономне, терморегулятори, інвертор, аварійне живлення, тепла підлога під плиткою, блискавкозахист.
+							Центральне водопостачання (свердловина) та водовідведення, централізований вивіз сміття.</br>
+							Біля будинку приватна парковка на 2 машини.
+							Ведеться відеоспостереження.</p></div>
 				</div>
 				<div class="item11 img11">
-					<section class="slider">
-						<div class="slides">
-							<img src="https://www.dl.dropboxusercontent.com/scl/fi/xsobl0c4dhdn3mw3sdqbo/chervona_ruta_1.jpg?rlkey=sf11gwmm3bvu8cpgcrmvd7q5h&st=ea4wylqc&dl=0" alt="image 1">
-							<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzh8k7x33a97mzovov5io/chervona_ruta_2.jpg?rlkey=zrjjhms9jlytxvp23xad0lki6&st=2q9bjctn&dl=0" alt="image 2">
-							<img src="https://www.dl.dropboxusercontent.com/scl/fi/7igxbigcq5d9ez0fipagy/chervona_ruta_3.jpg?rlkey=wkbfzurtqm9tfmlwxyyymoxh3&st=i6v9297k&dl=0" alt="image 3">
-							<img src="https://www.dl.dropboxusercontent.com/scl/fi/24xg4qo4fgvrtgrj0jpzp/chervona_ruta_4.jpg?rlkey=65qhnfzwcyeru0guxkmw831d6&st=ir1oesoh&dl=0" alt="image 4">
-							<img src="https://www.dl.dropboxusercontent.com/scl/fi/m7jayh3v9elfd0vq01qrx/chervona_ruta_5.jpg?rlkey=guh12h4yy20u6daaydzliuvhu&st=1z5qfckl&dl=0" alt="image 5">
-							<img src="https://www.dl.dropboxusercontent.com/scl/fi/zhn6e7uaax9sg923beun3/chervona_ruta_6.jpg?rlkey=qsi00mhctgbp70pji0wrf8xjc&st=g6jnwufz&dl=0" alt="image 6">
+					<section class="carousel">
+						<div class="track">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/03vp0eu5yt2lmwj8tpwpq/edelveys2.jpg?rlkey=4d2we5z3u2oykwaov6l8z8r6l&st=ljt3iux4&dl=0" alt="image 2">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/lrqadp8m0m3i83r5g0miz/edelveys3.jpg?rlkey=kd2flykssr773cscvg7ta0o13&st=0j1wnn56&dl=0" alt="image 3">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/t45f989uz3nt35fwwjp0i/edelveys4.jpg?rlkey=nu5irck4td74kppx8dxh60ku7&st=2uz70cc0&dl=0" alt="image 4">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/7ds85gdaehcb06i9brbzi/edelveys5.jpg?rlkey=pnghhgiib43rvai5y1z925wpq&st=8p412qkq&dl=0" alt="image 5">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzugjb7ma9eztts1xehha/edelveys6.jpg?rlkey=9tsgdp4ekxkctia465az0os03&st=3tcqqmgj&dl=0" alt="image 6">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/9iv7lwrfbbhac5b6hdtbp/edelveys7.jpg?rlkey=ssf32z57dq4e3jl6dzg0mpm66&st=xjkdged7&dl=0" alt="image 7">
+
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/03vp0eu5yt2lmwj8tpwpq/edelveys2.jpg?rlkey=4d2we5z3u2oykwaov6l8z8r6l&st=ljt3iux4&dl=0" alt="image 2">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/lrqadp8m0m3i83r5g0miz/edelveys3.jpg?rlkey=kd2flykssr773cscvg7ta0o13&st=0j1wnn56&dl=0" alt="image 3">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/t45f989uz3nt35fwwjp0i/edelveys4.jpg?rlkey=nu5irck4td74kppx8dxh60ku7&st=2uz70cc0&dl=0" alt="image 4">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/7ds85gdaehcb06i9brbzi/edelveys5.jpg?rlkey=pnghhgiib43rvai5y1z925wpq&st=8p412qkq&dl=0" alt="image 5">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/vzugjb7ma9eztts1xehha/edelveys6.jpg?rlkey=9tsgdp4ekxkctia465az0os03&st=3tcqqmgj&dl=0" alt="image 6">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/9iv7lwrfbbhac5b6hdtbp/edelveys7.jpg?rlkey=ssf32z57dq4e3jl6dzg0mpm66&st=xjkdged7&dl=0" alt="image 7">
+						</div>
+					</section>     
+				</div>
+			</div>
+			<div class="grid-house-shaphran item-milk">
+				<div class="item text11"><h3>Будинок "Шафран"</h3></div>
+				<div class="item house img12">
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/dwubw4bn63eh2ziufdzm3/shaphran1.jpg?rlkey=3z41xc3tn56866gmcqwoce5v3&st=yz23g0r7&dl=0" alt="house2">
+				</div>
+				<div class="item house text12">
+					<div>Будинок загальною площею 70 кв.м. Повністю мебльований. Оснащений елітною європейською технікою, підігрівом підлоги, каміном та просторою терасою. Має вітальню з вбудованою кухнею та 2 окремими кімнатами (спальнями). Побудований з використанням енергоефективних та екологічних матеріалів, з інтегрованою системою безперебійних альтернативних систем живлення. Опалення центральне та електричне автономне, терморегулятори, кондиціонер (інвертор), аварійне живлення, блискавкозахист.</br>
+						Центральне водопостачання (свердловина) та водовідведення, централізований вивіз сміття.
+					</div>
+				</div>
+				<div class="item img13">
+					<section class="carousel">
+						<div class="track">
+							
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/mfwy1hwng924ypbv66x29/shaphran2.jpg?rlkey=d6heo25whqiyjxj2pxdz39pgw&st=7er9i1l0&dl=0" alt="image 2">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/17xhxra40n7avyadfvrp7/shaphran3.jpg?rlkey=q8q9m66chjmzx2i3b7qefja2z&st=7nvqkpoj&dl=0" alt="image 3">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/4yfbhozgv7pjyjsnpi1vs/shaphran4.jpg?rlkey=vhkdjbwiynfvrfjg7kpzyj6pe&st=nctylydz&dl=0" alt="image 4">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/3qwdk8pnk4qi1r2ccrek4/shaphran5.jpg?rlkey=sd8gkz8uhc2exnfwin6vkl50e&st=lreh68ru&dl=0" alt="image 5">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/4af55vp2wxascwxn5nak9/shaphran6.jpg?rlkey=rd89s5gm76aemu9b0txg72960&st=xtfla2xz&dl=0" alt="image 6">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/wvwx1o4f65yija31usy2i/shaphran7.jpg?rlkey=gh8h0ksl0pc5wavrkg2m2t8ko&st=19fhj96i&dl=0" alt="image 7">
+
+							
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/mfwy1hwng924ypbv66x29/shaphran2.jpg?rlkey=d6heo25whqiyjxj2pxdz39pgw&st=7er9i1l0&dl=0" alt="image 2">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/17xhxra40n7avyadfvrp7/shaphran3.jpg?rlkey=q8q9m66chjmzx2i3b7qefja2z&st=7nvqkpoj&dl=0" alt="image 3">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/4yfbhozgv7pjyjsnpi1vs/shaphran4.jpg?rlkey=vhkdjbwiynfvrfjg7kpzyj6pe&st=nctylydz&dl=0" alt="image 4">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/3qwdk8pnk4qi1r2ccrek4/shaphran5.jpg?rlkey=sd8gkz8uhc2exnfwin6vkl50e&st=lreh68ru&dl=0" alt="image 5">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/4af55vp2wxascwxn5nak9/shaphran6.jpg?rlkey=rd89s5gm76aemu9b0txg72960&st=xtfla2xz&dl=0" alt="image 6">
+							<img src="https://www.dl.dropboxusercontent.com/scl/fi/wvwx1o4f65yija31usy2i/shaphran7.jpg?rlkey=gh8h0ksl0pc5wavrkg2m2t8ko&st=19fhj96i&dl=0" alt="image 7">
 						</div>
 					</section>      
 				</div>
@@ -13362,12 +13452,30 @@
 											fill="currentColor"/>
 										</svg>
 									
+									<div class="phone">
+										<a href="tel:+380680832442">+38 068 0832442</a>	
+									</div>				
+								</div>
+								<div class="contact-details__telephone" 
+									data-component-field="contact"
+									data-sb-field="telephone" 
+									data-sb-is-link="" 
+									data-sb-type="telephone"
+									data-sb-uuid="cad768f7-4623-4faf-a6bb-e10a1a67dc83">
 									
-										
-										+38 068 0832442, +38 068 8771363
-										
+									<svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path 
+											d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.3 22 2 13.7 2 3c0-.6.4-1 1-1h4.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.2z" 
+											fill="currentColor"/>
+										</svg>
+									
+									<div class="phone">
+										<a href="tel:+380688771363">+38 068 8771363</a>	
+									</div>				
 								</div>	
-<!--Messengers-->
+								
+
+<!--messengers-->
 								<div class="messenger-bar">
 
 									<a href="viber://forward?text=Добрий%20день!%20Цікавить%20будинок%20у%20Славському%20в%20КМ%20Sungora" class="messenger viber" target="_blank" >
@@ -13385,9 +13493,8 @@
 									</a>
 
 								</div>
+<!--END messengers-->
 
-
-<!--Messengers-->
 							</div>
 							
 							<div class="contact-details__row contact-details__location">
