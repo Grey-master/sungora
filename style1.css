@@ -1,0 +1,518 @@
+.sb-hero__title h1{
+	font-size: 3.25rem;
+	font-style: normal;
+	font-family: roboto;
+	font-weight: 600;
+	line-height: 1.25;
+	letter-spacing: 0px;
+	text-transform: none;
+	margin: 0 0 10px
+}
+
+.sb-hero__title h2{
+	font-size: 2.25rem;
+	font-style: normal;
+	font-family: roboto;
+	font-weight: 600;
+	line-height: 1.25;
+	letter-spacing: 0px;
+	text-transform: none;
+	margin: 0 0 10px;
+}
+
+.header{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+z-index:1000;
+}
+
+.nav-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.sb-nav{
+display:flex;
+gap:25px;
+}
+
+.sb-nav a{
+text-decoration:none;
+color:black;
+}
+
+.sb-mobile-nav-btn{
+display:none;
+font-size:28px;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+
+@media (max-width:1032px){
+
+.sb-mobile-nav-btn{
+display:block;
+}
+
+.sb-nav{
+	position:absolute;
+	top:60px;
+	left:0;
+	width:100%;
+	background:white;
+	flex-direction:column;
+	max-height:0;
+	overflow:hidden;
+	transition:0.3s;
+	z-index: 1001;
+	align-items: center;
+}
+
+.sb-nav.active{
+	max-height:300px;
+}
+
+.sb-nav a{
+	padding:15px;
+	border-top:1px solid #eee;
+}
+
+}
+
+/*block_Greed*/
+			.chess-section{
+				max-width:1280px;
+				margin:0 auto;
+			}
+
+			.slides-section{
+				max-width:1280px;
+				margin:0 auto;
+			}
+
+			.grid-chess{
+				display:grid;
+				grid-template-columns:repeat(3,1fr);
+				grid-template-rows:repeat(2,1fr) 43rem 30rem;
+
+				grid-template-areas:
+				"text1  img2 text3 "
+				"img1 text2 img3 "
+				"img4 img4 img4"
+				"text4 text4 text4";
+
+				width:100%;
+  				aspect-ratio:16/9;   /* сохраняет пропорции 1280x720 */
+			}
+
+			.grid-house-chervona-ruta{
+				display:grid;
+				grid-template-columns:repeat(2,1fr);
+				grid-template-rows:100px 360px repeat(2,1fr);
+
+				grid-template-areas:
+				"text8 text8"
+				"img7 img5"
+				"text7 text7"
+				"img6 img6";
+
+				width:100%;
+  				aspect-ratio:16/9;   /* сохраняет пропорции 1280x720 */
+			}
+
+			.grid-house-edelveys{
+				display:grid;
+				grid-template-columns:repeat(2,1fr);
+				grid-template-rows:100px 360px repeat(2,1fr);
+
+				grid-template-areas:
+				"text9 text9"
+				"img10 img14"
+				"text10 text10"
+				"img11 img11"
+				"text15 text15"
+				"img_video1 img_video1";
+
+				width:100%;
+  				aspect-ratio:16/9;   /* сохраняет пропорции 1280x720 */
+			}
+
+			.grid-house-shaphran{
+				display:grid;
+				grid-template-columns:repeat(2,1fr);
+				grid-template-rows:100px 360px repeat(2,1fr);
+
+				grid-template-areas:
+				"text11 text11"
+				"img15 img12"
+				"text12 text12"
+				"img13 img13";
+
+				width:100%;
+  				aspect-ratio:16/9;   /* сохраняет пропорции 1280x720 */
+			}
+
+			.item{
+				display:flex;
+				flex-direction:column;   /* элементы будут идти сверху вниз */
+				align-items:center;
+				justify-content:center;
+				padding:2vw;
+				box-sizing:border-box;
+			}
+
+
+			img{
+				width:100%;
+				height:100%;
+				object-fit:cover;
+			}
+			.item-coffi{
+				background-color:#513D32;
+				padding-bottom: 20px;
+			}
+
+			.item-coffi-color p, 
+			.item-coffi-color h3{
+				color: #f5f5f5 !important;
+			}
+
+			.item-coffi-line{
+				background-color:#513D32;
+			}
+
+			.item-milk{
+				background-color:#DFCEC4;
+			}
+
+			.house{
+				padding:0 2vw 2vw 2vw;
+			}
+
+
+/* назначаем области */
+			.img1{grid-area:img1;}
+			.text1{grid-area:text1;}
+
+			.img2{grid-area:img2;}
+			.text2{grid-area:text2;}
+
+			.img3{grid-area:img3;}
+			.text3{grid-area:text3;}
+
+			.img4{grid-column: 1/4;}
+			.text4{grid-column: 1/4;}
+			.text4 p{color: #f5f5f5;}
+
+			.img5{grid-area:img5;}
+			.img6{grid-column: 1/3; padding: 4vw 0 4vw 0;}
+
+			.img7{grid-area:img7;}
+			.text7{grid-area:text7;}
+
+			.text8{grid-column: 1/3; padding: 4vw 0 4vw 0;}
+
+			.text9{grid-column: 1/3; padding: 4vw 0 4vw 0;}
+
+			.img10{grid-area:img10;}
+			.text10{grid-area:text10;}
+
+			.img11{grid-column: 1/3;}
+			.text11{grid-column: 1/3; padding: 4vw 0 4vw 0;}
+
+			.text15{grid-area:text15;}
+			.img_video1{grid-column: 1/3; padding: 4vw 0 4vw 0;}
+
+			.img12{grid-area:img12;}
+			.text12{grid-area:text12;}
+
+			.img13{grid-column: 1/3; padding: 4vw 0 4vw 0;}
+			.img14{grid-area:img14;}
+			.img15{grid-area:img15;}
+
+			.text{
+				background:#f5f5f5;
+				text-align:center;
+			}
+			
+
+/* планшет */
+		@media (max-width:992px){
+
+			.grid-chess{
+				grid-template-columns:1fr;
+				grid-template-rows:auto;
+
+				grid-template-areas:
+					"img1"
+					"text1"
+					"img2"
+					"text2"
+					"img3"
+					"text3"
+					"img4"
+					"text4";
+			}
+
+			.grid-house-chervona-ruta{
+				grid-template-columns:1fr;
+				grid-template-rows:auto;
+
+				grid-template-areas:
+					"text8"
+					"img7"
+					"img5"
+					"text7"
+					"img6";
+			}
+
+			.grid-house-edelveys{
+				grid-template-columns:1fr;
+				grid-template-rows:auto;
+
+				grid-template-areas:
+					"text9"
+					"img10"
+					"img14"
+					"text10"
+					"img11"
+					"text15"
+					"img_video1";
+			}
+
+			.grid-house-shaphran{
+				grid-template-columns:1fr;
+				grid-template-rows:auto;
+
+				grid-template-areas:
+					"text11"
+					"img12"
+					"img15"
+					"text12"
+					"img13";
+			}
+
+		}
+
+/* мобильный */
+		@media (max-width:767px){
+
+			.item{
+				padding:25px;
+			}
+
+		}
+		
+/*слайдер*/
+			.slider {
+				max-width: 1000px;
+				margin: auto;
+				overflow: hidden;
+			}
+
+			.slides {
+				display: flex;
+				overflow-x: auto;
+				scroll-snap-type: x mandatory;
+				gap: 10px;
+			}
+
+			.slides img {
+				width: 100%;
+				max-width: 300px;
+				height: auto;
+				scroll-snap-align: start;
+				border-radius: 8px;
+			}
+
+/*прокрутка*/
+
+			.carousel {
+				width: 100%;
+				overflow: hidden;
+			}
+
+			.track {
+				display: flex;
+				gap: 20px;
+				width: calc(280px * 12 + 20px * 11);
+				animation: scroll 25s linear infinite;
+			}
+
+			.track img {
+				width: 280px;
+				height: 180px;
+				object-fit: cover;
+			}
+
+			.track:hover {
+				animation-play-state: paused;
+			}
+
+		@keyframes scroll {
+			from {
+				transform: translateX(0);
+			}
+			to {
+				transform: translateX(-1800px);
+			}
+		}
+
+/*иконка для связи viber*/
+
+			/* .viber-btn{
+				display:inline-flex;
+				align-items:center;
+				justify-content:center;
+				width:40px;
+				height:40px;
+				background:#7360F2;
+				border-radius:50%;
+			}
+
+			.viber-btn svg{
+				width:22px;
+				height:22px;
+				fill:#fff;
+			} */
+
+			.contact-details__viber{
+				display: block;
+				margin-top: 10px
+			}
+			.contact-details__viber{
+				display: flex;
+				align-items: flex-start;
+				gap: 10px
+			}
+
+			.contact-details__viber svg{
+				flex-shrink: 0;
+				width: 1.25rem;
+				height: 1.25rem
+			}
+
+		@media (max-width: 767px) {
+
+			.contact-details__viber svg{
+				width: 1rem;
+				height: 1rem;
+				margin-right: 8px
+			}
+		}
+
+		.sb-section-opt-light .contact-details__viber svg{
+			fill: #595959
+		}
+
+		.sb-section-opt-dark .contact-details__viber svg{
+			fill: #fff
+		}
+
+		.sb-section-opt-accent .contact-details__viber svg{
+			fill: #fff
+		}
+
+		.contact-details__viber a,
+		.contact-details__viber a:link,
+		.contact-details__viber a:visited{
+			font-size: 1.125rem;
+			font-style: normal;
+			font-family: roboto;
+			font-weight: 400;
+			line-height: 1;
+			letter-spacing: 0px;
+			text-transform: none
+		}
+
+		@media (max-width: 991px) {
+
+			.contact-details__viber a,
+			.contact-details__viber a:link,
+			.contact-details__viber a:visited{
+				font-size: 1rem;
+				font-style: normal;
+				font-family: roboto;
+				font-weight: 400;
+				line-height: 1;
+				letter-spacing: 0px;
+				text-transform: none
+			}
+		}
+
+		@media (max-width: 767px) {
+
+			.contact-details__viber a,
+			.contact-details__viber a:link,
+			.contact-details__viber a:visited{
+				font-size: 1rem;
+				font-style: normal;
+				font-family: roboto;
+				font-weight: 400;
+				line-height: 1;
+				letter-spacing: 0px;
+				text-transform: none
+			}
+		}
+
+/*messengers*/
+/*профессиональные кнопки*/
+
+			.messenger-bar{
+				display:flex;
+				gap:12px;
+				margin-top: 10px;
+			}
+
+			.messenger{
+				display:flex;
+				align-items:center;
+				gap:8px;
+				padding:8px 12px;
+				border-radius:30px;
+				text-decoration:none;
+				color:#fff;
+				font-size:14px;
+				font-family:sans-serif;
+				transition:0.3s;
+			}
+
+			.messenger svg{
+				width:16px;
+				height:16px;
+				fill:white;
+			}
+
+				.viber{
+				background:#7360F2;
+				}
+
+				.telegram{
+				background:#229ED9;
+				}
+
+				.whatsapp{
+				background:#25D366;
+				}
+
+				.messenger span{
+				max-width:0;
+				overflow:hidden;
+				white-space:nowrap;
+				transition:0.3s;
+				}
+
+				.messenger{
+				transform:translateY(-3px);
+				box-shadow:0 6px 14px rgba(0,0,0,0.25);
+				}
+
+				.messenger span{
+				max-width:100px;
+				}
