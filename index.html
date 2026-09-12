@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Для мобільного пошуку-->
 	
 
-	<title>SUNGORA - довгострокова оренда сучасних будинків у Славському</title>
+	<title>!SUNGORA - довгострокова оренда сучасних будинків у Славському</title>
 
 	<meta name="description" content="Оренда котеджів у Славському. Оренда котеджів в Карпатах. Оренда котеджів у Львівській області. Оренда котеджів у КМ Sungora. Орендуйте котедж у КМ Sungora.">
 	<meta name="robots" content="index, follow">
@@ -37,6 +37,8 @@
 
 	<link rel="stylesheet" href="style1.css">
 	<link rel="stylesheet" href="cleaned.css">
+
+	
 
 	
 
@@ -74,7 +76,7 @@
 
 
 
-	<a class="skip-to-main-content" href="#" style="">
+	<a class="skip-to-main-content" href="#" >
 		<span class="skip-to-main-content__text">Skip to main content</span>
 	</a>
 
@@ -110,13 +112,10 @@
               col-lg-offset-0
               col-xl-offset-0
               
-              sb-component-simple-top-nav
-              
-              
-              " style=" ">
+              sb-component-simple-top-nav">
 
 
-						<div id="sb-id-ae5b5476-4f27-469c-b18d-a0abe38b832f" class="sb-column-content ">
+						<div id="sb-id-ae5b5476-4f27-469c-b18d-a0abe38b832f" class="sb-column-content">
 
 							<div class="wrapper sb-top-header items-can-collapse"
 								data-sb-uuid="ae5b5476-4f27-469c-b18d-a0abe38b832f"
@@ -124,10 +123,10 @@
 								<!-- Змінюємо посилання -->
 								<a class="sb-top-header__brand brand" href="index.html" skip-data-sb="">
 									<!-- Меняем LOGO -->
-									<Div style="z-index:1000; width:245px; height: 50px; background-image: url(&quot;https://www.dl.dropboxusercontent.com/scl/fi/compvbrjjhaybmkum7aa0/246X50.jpg?rlkey=8c8o88konswbuiyus1cfddz8l&st=nls2eebr&dl=0;);"
+									<div style="z-index:1000; width:245px; height: 50px; background-image: url(&quot;https://www.dl.dropboxusercontent.com/scl/fi/compvbrjjhaybmkum7aa0/246X50.jpg?rlkey=8c8o88konswbuiyus1cfddz8l&st=nls2eebr&dl=0;);"
 										alt="">
 
-									</Div>
+									</div>
 									<!-- END Меняем LOGO -->
 								</a>
 
@@ -143,15 +142,14 @@
 
 								<nav class="sb-nav" id="sb-nav-ae5b5476-4f27-469c-b18d-a0abe38b832f">
 									<ul class="sb-nav__list" id="sb-nav-ae5b5476-4f27-469c-b18d-a0abe38b832f">
-										<li class="sb-nav__item   ">
-											<a class=" sb-link sb-nav__link " href="index.html#location-1">Локация</a>
+										<li class="sb-nav__item" data-id="location" onclick="scrollToSection('location')">
+											<a class=" sb-link sb-nav__link">Локация</a>
 										</li>
-										<li class="sb-nav__item   ">
-											<a class=" sb-link sb-nav__link " href="index.html#house">Будинки</a>
+										<li class="sb-nav__item" data-id="houses" onclick="scrollToSection('houses')">
+											<a class=" sb-link sb-nav__link">Будинки</a>
 										</li>
-										<li class="sb-nav__item   ">
-											<a class=" sb-link sb-nav__link "
-												href="#contact">Контакты</a>
+										<li class="sb-nav__item" data-id="contact" onclick="scrollToSection('contact')">
+											<a class=" sb-link sb-nav__link">Контакты</a>
 										</li>
 									</ul>
 								</nav>
@@ -281,7 +279,7 @@
 						alt="">
 				</div>
 
-				<div class="item item-milk text1" id="location-1">
+				<div class="item item-milk text1" id="location">
 					<h3>Локація</h3>
 					<div-e>Котеджне містечко Sungora розташоване у південно-східній частині с.Славсько. Сучасні котеджі в стилі шале. Містечко розташоване в 1,2 км від центральної дороги на мальовничих залитих сонцем схилах Карпатських гір. Від центра села до містечка веде дорога з твердим покриттям і
 						освітленням. Котеджне містечко Sungora має велику закриту територію, приватне озеро, ліс.
@@ -316,10 +314,37 @@
 						привабливість регіону. </div-e>
 				</div>
 
-				<div class="item item-coffi img4">
-					<img alt="rozvitok" loading="lazy"
-						src="https://www.dl.dropboxusercontent.com/scl/fi/v5cmjdtl6yer96kj8r6ew/plan-panorama.jpg?rlkey=h9zhs69suqhzolktnprmw2s10&st=4slzo6pg&dl=0"
-						alt="">
+				<div class="item item-coffi img4" id="houses">
+					<div class="plan">
+						<img alt="Master Plan" loading="lazy"
+							src="https://www.dl.dropboxusercontent.com/scl/fi/v5cmjdtl6yer96kj8r6ew/plan-panorama.jpg?rlkey=h9zhs69suqhzolktnprmw2s10&st=4slzo6pg&dl=0">
+						<svg viewBox="0 0 1672 941">
+						<circle data-id="chervona_ruta" class="apprent" cx="970" cy="497" r="30"
+								aria-label="Перейти к розділу Chervona Ruta" onclick="scrollToSection('chervona_ruta')"/>
+						<rect data-id="chervona_ruta" class="apprent" x="57" y="400" width="340" height="25"
+								aria-label="Перейти к розділу Chervona Ruta" onclick="scrollToSection('chervona_ruta')"/>
+
+						<circle data-id="edelveys" class="apprent" cx="1420" cy="889" r="30"
+								aria-label="Перейти к розділу Edelveys" onclick="scrollToSection('edelveys')"/>
+						<rect data-id="edelveys" class="apprent" x="57" y="368" width="340" height="25"
+								aria-label="Перейти к розділу Edelveys" onclick="scrollToSection('edelveys')"/>
+
+						<circle data-id="sakura" class="apprent" cx="1526" cy="725" r="30"
+								aria-label="Перейти к розділу Sakura" onclick="scrollToSection('sakura')"/>
+						<rect data-id="sakura" class="apprent" x="57" y="465" width="340" height="25"
+								aria-label="Перейти к розділу Sakura" onclick="scrollToSection('sakura')"/>
+
+						<circle data-id="magnolia" class="apprent" cx="1240" cy="618" r="30"
+								aria-label="Перейти к розділу Magnolia" onclick="scrollToSection('magnolia')"/>
+						<rect data-id="magnolia" class="apprent" x="57" y="498" width="340" height="25"
+								aria-label="Перейти к розділу Magnolia" onclick="scrollToSection('magnolia')"/>
+
+						<circle data-id="shaphran" class="apprent" cx="815" cy="356" r="30"
+								aria-label="Перейти к розділу Shaphran" onclick="scrollToSection('shaphran')"/>
+						<rect data-id="shaphran" class="apprent" x="57" y="432" width="340" height="25"
+								aria-label="Перейти к розділу Shaphran" onclick="scrollToSection('shaphran')"/>
+						</svg>
+					</div>
 				</div>
 
 				
@@ -345,8 +370,8 @@
 				</div>
 			</div>
 		</section>
-		<section  id="house">
-			<div class="grid-house-apart item-milk">
+		<section >
+			<div class="grid-house-apart item-milk" id="edelveys">
 				<div class="item house text9" >
 					<div>
 						<h2>Оренда апартаментів "Едельвейс"</h2>
@@ -455,7 +480,7 @@
 					<a href="#contact" class="btn btn-property" style="color: white; text-decoration: none;">Дізнатися більше</a>
 				</div>
 			</div>
-			<div class="grid-house-apart item-coffi item-coffi-color">
+			<div class="grid-house-apart item-coffi item-coffi-color" id="sakura">
 				<div class="item house text9" >
 					<div>
 						<h2>Оренда апартаментів "Сакура"</h2>
@@ -468,7 +493,7 @@
 						alt="image 1">
 				</div>
 				<div class="item house img14">
-					<img src="https://www.dl.dropboxusercontent.com/scl/fi/iomva5f7r1namho390ej3/ap_sakura_plan.jpg?rlkey=r3em3xxnq1y427fqznptykywk&st=i4q76qr4&dl=0"
+					<img src="https://www.dl.dropboxusercontent.com/scl/fi/ouupai3w19g5snj7848bp/ap_sakura_plan.jpg?rlkey=4xfah8gka9jejayre410em2x4&st=gyi5ng4h&dl=0"
 						alt="plan">
 				</div>
 				<div class="item house text10">
@@ -577,7 +602,7 @@
 					<a href="#contact" class="btn btn-property" style="color: white; text-decoration: none;">Дізнатися більше</a>
 				</div>
 			</div>
-			<div class="grid-house-apart item-milk">
+			<div class="grid-house-apart item-milk" id="magnolia">
 				<div class="item house text9" >
 					<div>
 						<h2>Оренда апартаментів "Магнолія"</h2>
@@ -675,7 +700,7 @@
 					<a href="#contact" class="btn btn-property" style="color: white; text-decoration: none;">Дізнатися більше</a>
 				</div>
 			</div>
-			<div class="grid-house-apart item-coffi item-coffi-color ">
+			<div class="grid-house-apart item-coffi item-coffi-color " id="chervona_ruta">
 				<div class="item house text9">
 					<h2>Оренда будинку "Червона Рута"</h2>
 					<h3>вітальня + дві спальні</h3>
@@ -779,7 +804,7 @@
 			
 			
 <!--Блок будинку Shaphran -->
-			<div class="grid-house-apart item-milk">
+			<div class="grid-house-apart item-milk"  id="shaphran">
 				<div class="item house text9">
 					<h2>Оренда будинку "Шафран"</h2>
 					<h3>вітальня + дві спальні</h3>
@@ -1069,32 +1094,7 @@
 	</section>
 	<!-- END block3_Section1 -->
 
-	<script>
-		var AOS;
-		if (AOS) {
-			AOS.init();
-			document.querySelector('body').setAttribute('data-aos-enabled', true);
-		}
-
-		$(function () {
-			// refresh animations positions after page was rendered.
-			if (AOS) {
-				AOS.refresh();
-			}
-		});
-	</script>
-
-
-
-
-	<script>
-		var lazyLoadImages = new LazyLoad({
-			elements_selector: ".lazy",
-			threshold: 500
-		});
-	</script>
-
-
+	
 	</div>
 	<!--end block3-->
 
@@ -1103,77 +1103,21 @@
 	</div>
 
 
-	<script>
-		$(document).ready(function () {
-			if (window.b12) {
-				if (window.b12.popup) {
-					window.b12.popup.init()
-				}
-				if (window.b12.banner) {
-					window.b12.banner.init()
-				}
-			}
-		})
-	</script>
-
-
-
-	<script type="text/javascript">
-		!function (b12) { var e = b12.createElement("script"), t = b12.getElementsByTagName("script")[0]; e.async = 1, e.src = "//cdn.b12.io/prod_traffic/global.js", t.parentNode.insertBefore(e, t) }(document);
-	</script>
-
-	<script src="./js/api.js" async="true"></script>
-
-	<script>
-		window.addEventListener('load', () => {
-			const { toastMessage } = window.b12?.nextSteps.parseUrlParams()
-
-			if (window.b12 && toastMessage) {
-				window.b12.toastNotification.show(toastMessage)
-			}
-		})
-	</script>
-
 	<div id="sb-scripts">
 
-		<script>
-			$(function () { });
-		</script>
+		<!-- пустой плейсхолдер-скрипт b12 убран: он вызывал $(...) без подключённого jQuery -->
 
 	</div>
 
 
 
 
-	<script>
-		const burger = document.getElementById("sb-mobile-nav-btn");
-		const nav = document.getElementById("sb-nav-ae5b5476-4f27-469c-b18d-a0abe38b832f");
-
-		burger.addEventListener("click", () => {
-			nav.classList.toggle("active");
-		});
-	</script>
+	
 	<!--кнопка "Наверх" -->
     <button id="backToTop" aria-label="Наверх">↑</button>
 
-	<script>
-		const backToTop = document.getElementById('backToTop');
-
-		window.addEventListener('scroll', () => {
-			if (window.scrollY > 500) {
-				backToTop.classList.add('show');
-			} else {
-				backToTop.classList.remove('show');
-			}
-		});
-
-		backToTop.addEventListener('click', () => {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth'
-			});
-		});
-	</script>
+	<script src="script.js"></script>
+	
 </body>
 
 </html>
