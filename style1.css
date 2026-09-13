@@ -614,3 +614,152 @@ display:block;
 	stroke: rgb(190, 127, 8);
 	stroke-width: 3;
 }
+
+
+/*Адаптивный текст на картинке*/
+
+
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.obj {
+  position: absolute;
+  
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  white-space: nowrap;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); /* для читаемости на светлом фоне */
+}
+
+.obj1 {
+  top: 21%;
+  left: 14%;
+  transform: translate(-35%, -50%); /*местоположение теста относительно центра текста*/
+}
+.obj2 {
+  top: 28%;
+  left: 14%;
+  transform: translate(-35%, -50%); /*местоположение теста относительно центра текста*/
+}
+.obj3 {
+  top: 35%;
+  left: 12.6%;
+  transform: translate(-35%, -50%); /*местоположение теста относительно центра текста*/
+}
+.obj4 {
+  top: 42%;
+  left: 13.5%;
+  transform: translate(-35%, -50%); /*местоположение теста относительно центра текста*/
+}
+.obj5 {
+  top: 49%;
+  left: 14%;
+  transform: translate(-35%, -50%); /*местоположение теста относительно центра текста*/
+}
+
+/* Базовый размер — больше 992px */
+.obj {
+  font-size: 20px;
+}
+
+/* max-width: 992px */
+@media (max-width: 992px) {
+  .obj {
+    font-size: 17px;
+  }
+}
+
+/* max-width: 767px */
+@media (max-width: 767px) {
+  .obj {
+    font-size: 13px;
+  }
+}
+
+/*Круги на картинке*/
+
+.marker {
+  position: absolute;
+  transform: translate(-50%, -50%); /* центрируем сам кружок относительно точки */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 50%;
+  background-color: #e63946; /* красный */
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.marker:hover {
+  transform: translate(-50%, -50%) scale(1.15); /* лёгкое увеличение при наведении */
+}
+
+/* Базовый размер — больше 992px */
+.marker {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+/* max-width: 992px */
+@media (max-width: 992px) {
+  .marker {
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+  }
+}
+
+/* max-width: 767px */
+@media (max-width: 767px) {
+  .marker {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+  }
+}
+
+/*Синхронное выделение кружков и надписей*/
+
+.marker,
+.obj {
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+/* Состояние выделения при наведении/фокусе */
+.marker.active {
+  background-color: #ffb703; /* акцентный цвет вместо красного */
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+.obj.active {
+  color: #ffb703;
+  font-weight: 700;
+}
+
+/* Убираем стандартную рамку фокуса у маркеров/надписей, 
+   но добавляем свою — для доступности */
+.marker:focus-visible,
+.obj:focus-visible {
+  outline: 2px solid #ffb703;
+  outline-offset: 2px;
+}

@@ -137,9 +137,9 @@ const data = {
     title: 'Будинок "Червона Рута"',
     scrollTo: "chervona_ruta"  
   },
-  edelveys: {
+  edelveis: {
     title: 'Апартаменти "Едельвейс"',
-    scrollTo: "edelveys" 
+    scrollTo: "edelveis" 
   },
   sakura: {
     title: 'Апартаменти "Сакура"',
@@ -149,9 +149,9 @@ const data = {
     title: 'Апартаменти "Магнолія"',
     scrollTo: "magnolia"  
   },
-  shaphran: {
+  shafran: {
     title: 'Будинок "Шафран"',
-    scrollTo: "shaphran"  
+    scrollTo: "shafran"  
   },
   houses: {
 	title: 'Будинки',
@@ -167,5 +167,67 @@ const data = {
   }
 }
 
+
+// Выделение и синхронизация элементов на картинке и скрол к нужному блоку
+
+document.addEventListener('DOMContentLoaded', () => {
+  const wrapper = document.getElementById('houses');
+  const items = wrapper.querySelectorAll('.marker, .obj');
+
+  // Группируем элементы по data-number для быстрого поиска пары
+  function getPairByNumber(number) {
+    return wrapper.querySelectorAll(`[data-number="${number}"]`);
+  }
+
+  items.forEach((item) => {
+    const number = item.dataset.number;
+
+    // --- Наведение мышкой: подсветка пары ---
+    item.addEventListener('mouseenter', () => {
+      getPairByNumber(number).forEach((el) => el.classList.add('active'));
+    });
+
+    item.addEventListener('mouseleave', () => {
+      getPairByNumber(number).forEach((el) => el.classList.remove('active'));
+    });
+
+    // --- Фокус с клавиатуры (Tab): та же подсветка ---
+    item.addEventListener('focus', () => {
+      getPairByNumber(number).forEach((el) => el.classList.add('active'));
+    });
+
+    item.addEventListener('blur', () => {
+      getPairByNumber(number).forEach((el) => el.classList.remove('active'));
+    });
+
+    // --- Клик: скролл + фокус на целевой блок ---
+    item.addEventListener('click', () => goToTarget(item));
+
+    // --- Клавиатура: Enter или Space тоже активируют переход ---
+    item.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        goToTarget(item);
+      }
+    });
+  });
+
+  function goToTarget(item) {
+    const targetId = item.dataset.target;
+    const targetEl = document.getElementById(targetId);
+
+    if (!targetEl) {
+      console.warn(`Элемент с id="${targetId}" не найден на странице`);
+      return;
+    }
+
+    targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Небольшая задержка, чтобы фокус сработал уже после скролла
+    setTimeout(() => {
+      targetEl.focus({ preventScroll: true });
+    }, 400);
+  }
+});
 
     
